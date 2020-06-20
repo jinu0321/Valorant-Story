@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Valorant Story</string>
+
+    <string name="color_deep_pink">#FF1493</string>
+    <string name="color_white">#FFFFFF</string>
+
+    <string name="main_tab_agents">Agents</string>
+    <string name="main_tab_weapons">Weapons</string>
+    <string name="main_tab_maps">Maps</string>
+</resources>

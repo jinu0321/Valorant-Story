@@ -1,0 +1,2 @@
+rootProject.name='Valorant Story'
+include ':app'
