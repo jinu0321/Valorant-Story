@@ -9,6 +9,7 @@ import com.jincal.valorantstory.`object`.ViewManager
 import com.jincal.valorantstory.fragment.AgentContentsFragment
 import com.jincal.valorantstory.fragment.MapContentsFragment
 import com.jincal.valorantstory.fragment.WeaponContentsFragment
+import com.jincal.valorantstory.recyclerview.Agent
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
