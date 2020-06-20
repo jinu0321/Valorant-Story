@@ -1,10 +1,12 @@
 package com.jincal.valorantstory.recyclerview
 
-import android.app.Activity
+import android.content.Context
+import android.content.res.Resources
 import androidx.fragment.app.Fragment
 import com.jincal.valorantstory.R
+import com.jincal.valorantstory.ResourceAccessor
 
-data class Agent(var name: String, val fragment: Fragment) {
+data class Agent(var name: String) {
     var biography = ""
     var comment = ""
     var role = ""
@@ -34,7 +36,7 @@ data class Agent(var name: String, val fragment: Fragment) {
     var skill4Image = 0
 
     init {
-        fun getString(address: Int) = fragment.getString(address)
+        fun getString(address: Int) = ResourceAccessor.res!!.getString(address)
         when (name) {
             "Breach" -> {
                 name = getString(R.string.agent_breach_name)

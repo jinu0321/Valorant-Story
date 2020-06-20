@@ -1,15 +1,26 @@
 package com.jincal.valorantstory.recyclerview
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
+import com.jincal.valorantstory.AgentInfoActivity
 import com.jincal.valorantstory.R
 import com.jincal.valorantstory.`object`.ScreenSizeHolder
 import kotlinx.android.synthetic.main.recyclerview_item_agent.view.*
+import org.jetbrains.anko.support.v4.startActivity
 
-class AgentContentsRecyclerViewAdapter(private val agents: Array<Agent>): RecyclerView.Adapter<AgentContentsRecyclerViewAdapter.AgentViewHolder>() {
-    class AgentViewHolder(val view: View): RecyclerView.ViewHolder(view)
+class AgentContentsRecyclerViewAdapter(private val agents: Array<Agent>, val fragment: Fragment): RecyclerView.Adapter<AgentContentsRecyclerViewAdapter.AgentViewHolder>() {
+    inner class AgentViewHolder(val view: View): RecyclerView.ViewHolder(view), View.OnClickListener {
+        init {
+            view.setOnClickListener(this)
+        }
+        override fun onClick(v: View?) {
+            fragment.startActivity<AgentInfoActivity>("name" to agents[adapterPosition].name)
+        }
+    }
 
     override fun onCreateViewHolder(
         parent: ViewGroup,

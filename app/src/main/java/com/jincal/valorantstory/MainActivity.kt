@@ -32,5 +32,8 @@ class MainActivity : AppCompatActivity() {
             ViewManager.changeTheTabColorAndSize(it as TextView, this, MainTabWeapons, MainTabAgents)
             FragmentManager.replaceFragmentInContainer(R.id.MainContentsFragmentContainer, MapContentsFragment(), this)
         }
+        // select agent tab initially
+        ViewManager.changeTheTabColorAndSize(MainTabAgents as TextView, this, MainTabWeapons, MainTabMaps)
+        FragmentManager.replaceFragmentInContainer(R.id.MainContentsFragmentContainer, AgentContentsFragment(), this)
     }
 }
