@@ -1,4 +1,4 @@
-package com.jincal.valorantstory.recyclerview.agentcard
+package com.jincal.valorantstory.agent.agentcard
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.jincal.valorantstory.AgentInfoActivity
 import com.jincal.valorantstory.R
 import com.jincal.valorantstory.`object`.ScreenSizeHolder
-import com.jincal.valorantstory.recyclerview.Agent
+import com.jincal.valorantstory.agent.Agent
 import kotlinx.android.synthetic.main.recyclerview_item_agent.view.*
 import org.jetbrains.anko.support.v4.startActivity
 

@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">발로란트 스토리</string>
     <string name="main_tab_agents">요원</string>
-    <string name="main_tab_weapons">무기</string>
+    <string name="main_tab_weapons">장비</string>
     <string name="main_tab_maps">전장</string>
     <string name="agent_breach_name">브리치</string>
     <string name="agent_breach_biography">스웨덴 출신의 생체병기 브리치는 강력한 역학적 폭발을 이용해 적진을 돌파합니다. 브리치의 강력한 피해량과 교란술은 아군이 굳이 \'공정한\' 전투를 할 필요가 없게 만들죠.</string>

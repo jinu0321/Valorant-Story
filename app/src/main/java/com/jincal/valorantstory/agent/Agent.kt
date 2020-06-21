@@ -1,7 +1,5 @@
-package com.jincal.valorantstory.recyclerview
+package com.jincal.valorantstory.agent
 
-import android.widget.TextView
-import androidx.databinding.BindingAdapter
 import com.jincal.valorantstory.R
 import com.jincal.valorantstory.ResourceAccessor
 

@@ -1,11 +1,11 @@
 package com.jincal.valorantstory.`object`
 
-import android.app.Activity
 import android.graphics.Color
 import android.view.View
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import com.jincal.valorantstory.R
-import kotlinx.android.synthetic.main.activity_main.*
+import com.jincal.valorantstory.ResourceAccessor
 
 object ViewManager {
     fun setWidthOf(view: View, value: Int) {
@@ -20,16 +20,9 @@ object ViewManager {
         textView.setTextColor(Color.parseColor(color))
     }
 
-    private fun setTextSizeOfTextView(textView: TextView, size: Int) {
-        textView.textSize = size.toFloat()
-    }
-
-    fun changeTheTabColorAndSize(selectedTab: TextView, activity: Activity, unSelectedTab1: TextView, unSelectedTab2: TextView) {
-        setTextColorOfTextView(selectedTab, activity.getString(R.string.color_deep_pink))
-        setTextSizeOfTextView(selectedTab, 32)
-        setTextColorOfTextView(unSelectedTab1, activity.getString(R.string.color_white))
-        setTextSizeOfTextView(unSelectedTab1, 22)
-        setTextColorOfTextView(unSelectedTab2, activity.getString(R.string.color_white))
-        setTextSizeOfTextView(unSelectedTab2, 22)
+    fun highlightSelectedTab(selectedTab: TextView, unSelectedTab1: TextView, unSelectedTab2: TextView) {
+        setTextColorOfTextView(selectedTab, ResourceAccessor.res!!.getString(R.string.color_deep_pink))
+        setTextColorOfTextView(unSelectedTab1, ResourceAccessor.res!!.getString(R.string.color_white))
+        setTextColorOfTextView(unSelectedTab2, ResourceAccessor.res!!.getString(R.string.color_white))
     }
 }

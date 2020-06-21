@@ -10,7 +10,7 @@
     <string name="point">points</string>
 
     <string name="main_tab_agents">Agent</string>
-    <string name="main_tab_weapons">Weapon</string>
+    <string name="main_tab_weapons">Arsenal</string>
     <string name="main_tab_maps">Map</string>
 
 
@@ -255,5 +255,4 @@
     <string name="agent_viper_skill4_cost" translatable="false">7</string>
     <string name="agent_viper_skill4_charge" translatable="false">1</string>
     <string name="agent_viper_skill4_description">EQUIP a chemical sprayer. FIRE to spray a chemical cloud in all directions around Viper, creating a large cloud that reduces the vision range and maximum health of players inside of it.</string>
-
 </resources>

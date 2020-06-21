@@ -9,9 +9,9 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.jincal.valorantstory.`object`.ScreenSizeHolder
 import com.jincal.valorantstory.databinding.ActivityAgentInfoBinding
-import com.jincal.valorantstory.recyclerview.Agent
-import com.jincal.valorantstory.recyclerview.agentcard.RecyclerViewDecoration
-import com.jincal.valorantstory.recyclerview.agentskill.AgentSkillRecyclerViewAdapter
+import com.jincal.valorantstory.agent.Agent
+import com.jincal.valorantstory.agent.agentcard.RecyclerViewDecoration
+import com.jincal.valorantstory.agent.agentskill.AgentSkillRecyclerViewAdapter
 import kotlinx.android.synthetic.main.activity_agent_info.*
 
 class AgentInfoActivity : AppCompatActivity() {

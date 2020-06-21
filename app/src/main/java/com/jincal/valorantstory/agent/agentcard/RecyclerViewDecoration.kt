@@ -1,4 +1,4 @@
-package com.jincal.valorantstory.recyclerview.agentcard
+package com.jincal.valorantstory.agent.agentcard
 
 import android.graphics.Rect
 import android.view.View
