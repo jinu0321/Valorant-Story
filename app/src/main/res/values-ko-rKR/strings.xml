@@ -156,4 +156,8 @@
     <string name="agent_viper_skill4_name">독사의 구덩이</string>
     <string name="agent_viper_skill3_cost">재사용 불가</string>
     <string name="agent_viper_skill4_description">화학 물질 분사기를 장착합니다. 발사하면 사방으로 화학 물질 연기를 분사해 안에 있는 플레이어의 가시거리와 최대 체력을 감소시키는 거대 연기를 생성합니다.</string>
+    <string name="cred">크레드</string>
+    <string name="sec">초</string>
+    <string name="charge">회</string>
+    <string name="point">포인트</string>
 </resources>

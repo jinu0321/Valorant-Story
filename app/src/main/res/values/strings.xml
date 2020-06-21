@@ -4,6 +4,11 @@
     <string name="color_deep_pink" translatable="false">#FF1493</string>
     <string name="color_white" translatable="false">#FFFFFF</string>
 
+    <string name="cred">creds</string>
+    <string name="sec">sec</string>
+    <string name="charge">charges</string>
+    <string name="point">points</string>
+
     <string name="main_tab_agents">Agent</string>
     <string name="main_tab_weapons">Weapon</string>
     <string name="main_tab_maps">Map</string>

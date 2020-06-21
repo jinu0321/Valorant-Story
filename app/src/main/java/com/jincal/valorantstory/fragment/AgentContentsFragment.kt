@@ -1,19 +1,15 @@
 package com.jincal.valorantstory.fragment
 
-import android.app.Activity
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.jincal.valorantstory.R
 import com.jincal.valorantstory.recyclerview.Agent
-import com.jincal.valorantstory.recyclerview.AgentContentsRecyclerViewAdapter
-import com.jincal.valorantstory.recyclerview.RecyclerViewDecoration
-import kotlinx.android.synthetic.main.fragment_contents_agent.*
+import com.jincal.valorantstory.recyclerview.agentcard.AgentContentsRecyclerViewAdapter
+import com.jincal.valorantstory.recyclerview.agentcard.RecyclerViewDecoration
 import kotlinx.android.synthetic.main.fragment_contents_agent.view.*
 
 class AgentContentsFragment(): Fragment() {
@@ -37,8 +33,17 @@ class AgentContentsFragment(): Fragment() {
         )
         val view = inflater.inflate(R.layout.fragment_contents_agent, container, false)
         view.AgentContentsRecyclerView.layoutManager = GridLayoutManager(activity, 2)
-        view.AgentContentsRecyclerView.adapter = AgentContentsRecyclerViewAdapter(agents, this)
-        view.AgentContentsRecyclerView.addItemDecoration(RecyclerViewDecoration(3, 3))
+        view.AgentContentsRecyclerView.adapter =
+            AgentContentsRecyclerViewAdapter(
+                agents,
+                this
+            )
+        view.AgentContentsRecyclerView.addItemDecoration(
+            RecyclerViewDecoration(
+                3,
+                3
+            )
+        )
         return view
     }
 }
