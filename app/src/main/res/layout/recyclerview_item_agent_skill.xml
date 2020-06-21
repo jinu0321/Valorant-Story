@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_item_agent_skill">
+
+    <ImageView
+        android:id="@+id/ItemAgentSkillImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ItemAgentSkillDescriptionTextView"
+        tools:srcCompat="@drawable/breach_1_aftershock" />
+
+    <TextView
+        android:id="@+id/ItemAgentSkillName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toStartOf="@+id/ItemAgentSkillCostTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/agent_breach_skill1_name" />
+
+    <TextView
+        android:id="@+id/ItemAgentSkillDescriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ItemAgentSkillImage"
+        app:layout_constraintTop_toBottomOf="@+id/ItemAgentSkillName"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="@string/agent_breach_skill1_description" />
+
+    <TextView
+        android:id="@+id/ItemAgentSkillCostTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/ItemAgentSkillName"
+        app:layout_constraintStart_toStartOf="@+id/ItemAgentSkillDescriptionTextView"
+        app:layout_constraintTop_toTopOf="@+id/ItemAgentSkillName"
+        tools:text="@string/agent_breach_skill1_cost" />
+
+    <TextView
+        android:id="@+id/ItemAgentSkillCredTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="@string/cred"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/ItemAgentSkillName"
+        app:layout_constraintStart_toEndOf="@+id/ItemAgentSkillCostTextView"
+        app:layout_constraintTop_toTopOf="@+id/ItemAgentSkillName"
+        tools:text="@string/cred" />
+
+    <TextView
+        android:id="@+id/ItemAgentSkillChargeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/ItemAgentSkillName"
+        app:layout_constraintStart_toEndOf="@+id/ItemAgentSkillCredTextView"
+        app:layout_constraintTop_toTopOf="@+id/ItemAgentSkillName"
+        tools:text="@string/agent_breach_skill1_charge" />
+
+    <TextView
+        android:id="@+id/ItemAgentSkillChargeUnitTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="@string/charge"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@id/ItemAgentSkillChargeTextView"
+        app:layout_constraintStart_toEndOf="@id/ItemAgentSkillChargeTextView"
+        app:layout_constraintTop_toTopOf="@id/ItemAgentSkillChargeTextView"
+        tools:text="@string/charge" />
+
+    <TextView
+        android:id="@+id/ItemAgentSkillCommandTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:textColor="#FDD835"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ItemAgentSkillDescriptionTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="C" />
+</androidx.constraintlayout.widget.ConstraintLayout>

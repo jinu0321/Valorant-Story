@@ -1,10 +1,259 @@
 <resources>
     <string name="app_name">Valorant Story</string>
 
-    <string name="color_deep_pink">#FF1493</string>
-    <string name="color_white">#FFFFFF</string>
+    <string name="color_deep_pink" translatable="false">#FF1493</string>
+    <string name="color_white" translatable="false">#FFFFFF</string>
 
-    <string name="main_tab_agents">Agents</string>
-    <string name="main_tab_weapons">Weapons</string>
-    <string name="main_tab_maps">Maps</string>
+    <string name="cred">creds</string>
+    <string name="sec">sec</string>
+    <string name="charge">charges</string>
+    <string name="point">points</string>
+
+    <string name="main_tab_agents">Agent</string>
+    <string name="main_tab_weapons">Weapon</string>
+    <string name="main_tab_maps">Map</string>
+
+
+    <string name="agent_breach_name">Breach</string>
+    <string name="agent_breach_biography">Breach, the bionic Swede, fires powerful, targeted kinetic blasts to aggressively clear a path through enemy ground. The damage and disruption he inflicts ensures no fight is ever fair.</string>
+    <string name="agent_breach_comment">"Hit them fast, hit them hard."</string>
+    <string name="agent_breach_role">Initiator</string>
+    <string name="agent_breach_role_description">Initiators challenge angles by setting up their team to enter contested ground and push defenders away. You can expect to see lots of stuns and information gathering abilities with this class.</string>
+    <string name="agent_breach_skill1_name">Aftershock</string>
+    <string name="agent_breach_skill1_cost" translatable="false">100</string>
+    <string name="agent_breach_skill1_charge" translatable="false">1</string>
+    <string name="agent_breach_skill1_description">EQUIP a fusion charge. FIRE the charge to set a slow-acting burst through the wall. The burst does heavy damage to anyone caught in its area.</string>
+    <string name="agent_breach_skill2_name">Flashpoint</string>
+    <string name="agent_breach_skill2_cost" translatable="false">200</string>
+    <string name="agent_breach_skill2_charge" translatable="false">2</string>
+    <string name="agent_breach_skill2_description">EQUIP a blinding charge. FIRE the charge to set fast-acting burst through the wall. The charge detonates to blind all players looking at it.</string>
+    <string name="agent_breach_skill3_name">Fault Line</string>
+    <string name="agent_breach_skill3_cost">35sec</string>
+    <string name="agent_breach_skill3_charge" translatable="false">1</string>
+    <string name="agent_breach_skill3_description">EQUIP a seismic blast. HOLD FIRE to increase the distance. RELEASE to set off the quake, dazing all players in its zone and in a line up to the zone.</string>
+    <string name="agent_breach_skill4_name">Rolling Thunder</string>
+    <string name="agent_breach_skill4_cost" translatable="false">7</string>
+    <string name="agent_breach_skill4_charge" translatable="false">1</string>
+    <string name="agent_breach_skill4_description">EQUIP a seismic charge. FIRE to send a cascading quake through all terrain in a large cone. The quake dazes and knocks up anyone caught in it.</string>
+
+    <string name="agent_brimstone_name">Brimstone</string>
+    <string name="agent_brimstone_biography">"Joining from the USA, Brimstone's orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander. "</string>
+    <string name="agent_brimstone_comment">\"Pay attention. Might learn something.\"</string>
+    <string name="agent_brimstone_role">Controller</string>
+    <string name="agent_brimstone_role_description">Controllers are experts in slicing up dangerous territory to set their team up for success. This class provides lots of utility in the form of slowing down the enemy players via Walls, Smokes that block Vision, and even Slows that can be placed on the ground.</string>
+    <string name="agent_brimstone_skill1_name">Stim Beacon</string>
+    <string name="agent_brimstone_skill1_cost" translatable="false">100</string>
+    <string name="agent_brimstone_skill1_charge" translatable="false">2</string>
+    <string name="agent_brimstone_skill1_description">EQUIP a stim beacon. FIRE to toss the stim beacon in front of Brimstone. Upon landing, the stim beacon will create a field that grants players RapidFire.</string>
+    <string name="agent_brimstone_skill2_name">Incendiary</string>
+    <string name="agent_brimstone_skill2_cost" translatable="false">300</string>
+    <string name="agent_brimstone_skill2_charge" translatable="false">1</string>
+    <string name="agent_brimstone_skill2_description">EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.</string>
+    <string name="agent_brimstone_skill3_name">Sky Smoke</string>
+    <string name="agent_brimstone_skill3_cost" translatable="false">100</string>
+    <string name="agent_brimstone_skill3_charge" translatable="false">3</string>
+    <string name="agent_brimstone_skill3_description">EQUIP a tactical map. FIRE to set locations where Brimstone’s smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.</string>
+    <string name="agent_brimstone_skill4_name">Orbital Strike</string>
+    <string name="agent_brimstone_skill4_cost" translatable="false">7</string>
+    <string name="agent_brimstone_skill4_charge" translatable="false">1</string>
+    <string name="agent_brimstone_skill4_description">EQUIP a seismic charge. FIRE to send a cascading quake through all terrain in a large cone. The quake dazes and knocks up anyone caught in it.</string>
+
+    <string name="agent_cypher_name">Cypher</string>
+    <string name="agent_cypher_biography">"The Moroccan information broker, Cypher is a one-man surveillance network who keeps tabs on the enemy's every move. No secret is safe. No maneuver goes unseen. Cypher is always watching. "</string>
+    <string name="agent_cypher_comment">\"I know exactly where you are.\"</string>
+    <string name="agent_cypher_role">Sentinel</string>
+    <string name="agent_cypher_role_description">Sentinels are defensive experts who can lock down areas and watch flanks, both on attacker and defender rounds. This class type tends to be the best defensive agents; these characters will either hang back or lay traps to watch your teams flank when attacking.</string>
+    <string name="agent_cypher_skill1_name">Trapwire</string>
+    <string name="agent_cypher_skill1_cost" translatable="false">200</string>
+    <string name="agent_cypher_skill1_charge" translatable="false">2</string>
+    <string name="agent_cypher_skill1_description">EQUIP a trapwire. FIRE to place a destructible and covert tripwire at the targeted location creating a line that spans between the placed location and the wall opposite. Enemy players who cross a tripwire will be tethered, revealed, and dazed after a short period if they do not destroy the device in time. This ability can be picked up to be REDEPLOYED.</string>
+    <string name="agent_cypher_skill2_name">Cyber Cage</string>
+    <string name="agent_cypher_skill2_cost" translatable="false">100</string>
+    <string name="agent_cypher_skill2_charge" translatable="false">2</string>
+    <string name="agent_cypher_skill2_description">INSTANTLY toss the cyber cage in front of Cypher. Activate to create a zone that blocks vision and slows enemies who pass through it.</string>
+    <string name="agent_cypher_skill3_name">Spycam</string>
+    <string name="agent_cypher_skill3_cost">45sec</string>
+    <string name="agent_cypher_skill3_charge" translatable="false">1</string>
+    <string name="agent_cypher_skill3_description">EQUIP a spycam. FIRE to place the spycam at the targeted location. RE-USE this ability to take control of the camera’s view. While in control of the camera, FIRE to shoot a marking dart. This dart will reveal the location of any player struck by the dart.(if you take back the cam, only 15s)</string>
+    <string name="agent_cypher_skill4_name">Neural Theft</string>
+    <string name="agent_cypher_skill4_cost" translatable="false">7</string>
+    <string name="agent_cypher_skill4_charge" translatable="false">1</string>
+    <string name="agent_cypher_skill4_description">INSTANTLY use on a dead enemy player in your crosshairs to reveal the location of all living enemy players.</string>
+
+    <string name="agent_jett_name">Jett</string>
+    <string name="agent_jett_biography">Representing her home country of South Korea, Jett\'s agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.</string>
+    <string name="agent_jett_comment">\"Keep up.\"</string>
+    <string name="agent_jett_role">Duelist</string>
+    <string name="agent_jett_role_description">Duelists are self-sufficient fraggers who their team expects, through abilities and skills, to get high frags and seek out engagements first. This class type is the most offensive choice and often ranks highly as an Attacker. These agents will generally be at the forefront when clearing corners and attacking sites.</string>
+    <string name="agent_jett_skill1_name">Cloudburst</string>
+    <string name="agent_jett_skill1_cost" translatable="false">100</string>
+    <string name="agent_jett_skill1_charge" translatable="false">3</string>
+    <string name="agent_jett_skill1_description">INSTANTLY throw a projectile that expands into a brief vision-blocking cloud on impact with a surface. HOLD the ability key to curve the smoke in the direction of your crosshair.</string>
+    <string name="agent_jett_skill2_name">Updraft</string>
+    <string name="agent_jett_skill2_cost" translatable="false">100</string>
+    <string name="agent_jett_skill2_charge" translatable="false">2</string>
+    <string name="agent_jett_skill2_description">INSTANTLY propel Jett high into the air.</string>
+    <string name="agent_jett_skill3_name">Tailwind</string>
+    <string name="agent_jett_skill3_cost">kill 2 enemies</string>
+    <string name="agent_jett_skill3_charge" translatable="false">1</string>
+    <string name="agent_jett_skill3_description">INSTANTLY propel Jett in the direction she is moving. If Jett is standing still, she will propel forward.</string>
+    <string name="agent_jett_skill4_name">Blade Storm</string>
+    <string name="agent_jett_skill4_cost" translatable="false">6</string>
+    <string name="agent_jett_skill4_charge" translatable="false">1</string>
+    <string name="agent_jett_skill4_description">EQUIP a set of highly accurate knives that recharge on killing an opponent. FIRE to throw a single knife at your target. ALTERNATE FIRE to throw all remaining daggers at your target.(head: 150, else: 50)</string>
+
+    <string name="agent_omen_name">Omen</string>
+    <string name="agent_omen_biography">A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across the field, then lets paranoia take hold as his foe scrambles to learn where he might strike next.</string>
+    <string name="agent_omen_comment">\"I am the Beginning, I am the end.\"</string>
+    <string name="agent_omen_role">Controller</string>
+    <string name="agent_omen_role_description">Controllers are experts in slicing up dangerous territory to set their team up for success. This class provides lots of utility in the form of slowing down the enemy players via Walls, Smokes that block Vision, and even Slows that can be placed on the ground.</string>
+    <string name="agent_omen_skill1_name">Shrouded Step</string>
+    <string name="agent_omen_skill1_cost" translatable="false">100</string>
+    <string name="agent_omen_skill1_charge" translatable="false">2</string>
+    <string name="agent_omen_skill1_description">EQUIP a shadow walk ability and see its range indicator. FIRE to begin a brief channel, then teleport to the marked location.</string>
+    <string name="agent_omen_skill2_name">Paranoia</string>
+    <string name="agent_omen_skill2_cost" translatable="false">200</string>
+    <string name="agent_omen_skill2_charge" translatable="false">1</string>
+    <string name="agent_omen_skill2_description">INSTANTLY fire a shadow projectile forward, briefly reducing the vision range of all players it touches. This projectile can pass straight through walls.</string>
+    <string name="agent_omen_skill3_name">Dark Cover</string>
+    <string name="agent_omen_skill3_cost">35sec</string>
+    <string name="agent_omen_skill3_charge" translatable="false">2</string>
+    <string name="agent_omen_skill3_description">EQUIP a shadow orb and see its range indicator. FIRE to throw the shadow orb to the marked location, creating a long-lasting shadow sphere that blocks vision. HOLD ALTERNATE FIRE while targeting to move the marker further away. HOLD the ability key with targeting to move the market closer.</string>
+    <string name="agent_omen_skill4_name">From the Shadows</string>
+    <string name="agent_omen_skill4_cost" translatable="false">7</string>
+    <string name="agent_omen_skill4_charge" translatable="false">1</string>
+    <string name="agent_omen_skill4_description">EQUIP a tactical map. FIRE to begin teleporting to the selected location. While teleporting, Omen will appear as a Shade that can be destroyed by an enemy to cancel his teleport.</string>
+
+    <string name="agent_phoenix_name">Phoenix</string>
+    <string name="agent_phoenix_biography">Hailing from the U.K., Phoenix\'s star power shines through in his fighting style, igniting the battlefield with flash and flare. Whether he\'s got backup or not, he\'ll rush into a fight on his own terms.</string>
+    <string name="agent_phoenix_comment">\"Just take a seat, I got this.\"</string>
+    <string name="agent_phoenix_role">Duelist</string>
+    <string name="agent_phoenix_role_description">Duelists are self-sufficient fraggers who their team expects, through abilities and skills, to get high frags and seek out engagements first. This class type is the most offensive choice and often ranks highly as an Attacker. These agents will generally be at the forefront when clearing corners and attacking sites.</string>
+    <string name="agent_phoenix_skill1_name">Blaze</string>
+    <string name="agent_phoenix_skill1_cost" translatable="false">200</string>
+    <string name="agent_phoenix_skill1_charge" translatable="false">1</string>
+    <string name="agent_phoenix_skill1_description">EQUIP a flame wall. FIRE to create a line of flame that moves forward, creating a wall of fire that blocks vision and damages players passing through it. HOLD FIRE to bend the wall in the direction of your crosshair. You can be healed by standing on the wall.</string>
+    <string name="agent_phoenix_skill2_name">Curveball</string>
+    <string name="agent_phoenix_skill2_cost" translatable="false">200</string>
+    <string name="agent_phoenix_skill2_charge" translatable="false">2</string>
+    <string name="agent_phoenix_skill2_description">EQUIP a flare orb that takes a curving path and detonates shortly after throwing. FIRE to curve the flare orb to the left, detonating and blinding any player who sees the orb. ALTERNATE FIRE to curve the flare orb to the right.</string>
+    <string name="agent_phoenix_skill3_name">Hot Hands</string>
+    <string name="agent_phoenix_skill3_cost">kill 2 enemies</string>
+    <string name="agent_phoenix_skill3_charge" translatable="false">1</string>
+    <string name="agent_phoenix_skill3_description">EQUIP a fireball. FIRE to throw a fireball that explodes after a set amount of time or upon hitting the ground, creating a lingering fire zone that damages enemies.</string>
+    <string name="agent_phoenix_skill4_name">Run It Back</string>
+    <string name="agent_phoenix_skill4_cost" translatable="false">6</string>
+    <string name="agent_phoenix_skill4_charge" translatable="false">1</string>
+    <string name="agent_phoenix_skill4_description">INSTANTLY place a marker at Phoenix’s location. While this ability is active, dying or allowing the timer to expire will end this ability and bring Phoenix back to this location with full health.</string>
+
+    <string name="agent_raze_name">Raze</string>
+    <string name="agent_raze_biography">Raze explodes out of Brazil with her big personality and big guns. With her blunt-force-trauma playstyle, she excels at flushing entrenched enemies and clearing tight spaces with a generous dose of “boom.”</string>
+    <string name="agent_raze_comment">\"fire in the hole!\"</string>
+    <string name="agent_raze_role">Duelist</string>
+    <string name="agent_raze_role_description">Duelists are self-sufficient fraggers who their team expects, through abilities and skills, to get high frags and seek out engagements first. This class type is the most offensive choice and often ranks highly as an Attacker. These agents will generally be at the forefront when clearing corners and attacking sites.</string>
+    <string name="agent_raze_skill1_name">Boom Robot</string>
+    <string name="agent_raze_skill1_cost" translatable="false">200</string>
+    <string name="agent_raze_skill1_charge" translatable="false">1</string>
+    <string name="agent_raze_skill1_description">EQUIP a Boom Bot. FIRE will deploy the bot, causing it to travel in a straight line on the ground, bouncing off walls. The Boom Bot will lock on to any enemies in its frontal cone and chase them, exploding for heavy damage if it reaches them.</string>
+    <string name="agent_raze_skill2_name">Blast Pack</string>
+    <string name="agent_raze_skill2_cost" translatable="false">200</string>
+    <string name="agent_raze_skill2_charge" translatable="false">2</string>
+    <string name="agent_raze_skill2_description">INSTANTLY throw a Blast Pack that will stick to surfaces. RE-USE the ability after deployment to detonate, damaging and moving anything hit. Raze isn\'t damaged by this ability, but will still take fall damage if launched up far enough.</string>
+    <string name="agent_raze_skill3_name">Paint Shells</string>
+    <string name="agent_raze_skill3_cost">kill 2 enemies</string>
+    <string name="agent_raze_skill3_charge" translatable="false">1</string>
+    <string name="agent_raze_skill3_description">EQUIP a cluster grenade. FIRE to throw the grenade, which does damage and creates sub-munitions, each doing damage to anyone in their range.(55 per shot)</string>
+    <string name="agent_raze_skill4_name">Showstopper</string>
+    <string name="agent_raze_skill4_cost" translatable="false">6</string>
+    <string name="agent_raze_skill4_charge" translatable="false">1</string>
+    <string name="agent_raze_skill4_description">EQUIP a rocket launcher. FIRE shoots a rocket that does massive area damage on contact with anything.(max 150 damages)</string>
+
+    <string name="agent_reyna_name">Reyna</string>
+    <string name="agent_reyna_biography">Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her capability is only limited by her raw skill, making her highly dependent on performance.</string>
+    <string name="agent_reyna_comment">\"What hope do these criaturas have?\"</string>
+    <string name="agent_reyna_role">Duelist</string>
+    <string name="agent_reyna_role_description">Duelists are self-sufficient fraggers who their team expects, through abilities and skills, to get high frags and seek out engagements first. This class type is the most offensive choice and often ranks highly as an Attacker. These agents will generally be at the forefront when clearing corners and attacking sites.</string>
+    <string name="agent_reyna_skill1_name">Leer</string>
+    <string name="agent_reyna_skill1_cost" translatable="false">200</string>
+    <string name="agent_reyna_skill1_charge" translatable="false">2</string>
+    <string name="agent_reyna_skill1_description">EQUIP an ethereal destructible eye. ACTIVATE to cast the eye a short distance forward. The eye will Nearsight all enemies who look at it.</string>
+    <string name="agent_reyna_skill2_name">Devour</string>
+    <string name="agent_reyna_skill2_cost" translatable="false">100</string>
+    <string name="agent_reyna_skill2_charge" translatable="false">4</string>
+    <string name="agent_reyna_skill2_description">Enemies killed by Reyna leave behind Soul Orbs that last 3 seconds. INSTANTLY consume a nearby soul orb, rapidly healing for a short duration. Health gained through this skill exceeding 100 will decay over time. If EMPRESS is active, this skill will automatically cast and not consume the orb.(share charge with Dismiss)</string>
+    <string name="agent_reyna_skill3_name">Dismiss</string>
+    <string name="agent_reyna_skill3_cost" translatable="false">100</string>
+    <string name="agent_reyna_skill3_charge" translatable="false">4</string>
+    <string name="agent_reyna_skill3_description">INSTANTLY consume a nearby soul orb, becoming intangible for a short duration. If EMPRESS is active, also become invisible.(share charge with Devour)</string>
+    <string name="agent_reyna_skill4_name">Empress</string>
+    <string name="agent_reyna_skill4_cost" translatable="false">6</string>
+    <string name="agent_reyna_skill4_charge" translatable="false">1</string>
+    <string name="agent_reyna_skill4_description">INSTANTLY enter a frenzy, increasing firing speed, equip and reload speed dramatically. Scoring a kill renews the duration.</string>
+
+    <string name="agent_sage_name">Sage</string>
+    <string name="agent_sage_biography">The stronghold of China, Sage creates safety for herself and her team wherever she goes. Able to revive fallen friends and stave off aggressive pushes, she provides a calm center to a hellish fight.</string>
+    <string name="agent_sage_comment">\'\'I am both shield and sword.\'\'</string>
+    <string name="agent_sage_role">Sentinel</string>
+    <string name="agent_sage_role_description">Sentinels are defensive experts who can lock down areas and watch flanks, both on attacker and defender rounds. This class type tends to be the best defensive agents; these characters will either hang back or lay traps to watch your teams flank when attacking.</string>
+    <string name="agent_sage_skill1_name">Barrier Orb</string>
+    <string name="agent_sage_skill1_cost" translatable="false">400</string>
+    <string name="agent_sage_skill1_charge" translatable="false">1</string>
+    <string name="agent_sage_skill1_description">EQUIP a barrier orb. FIRE places a solid wall. ALT FIRE rotates the targeter.(wall hp: 800, 30s remains)</string>
+    <string name="agent_sage_skill2_name">Slow Orb</string>
+    <string name="agent_sage_skill2_cost" translatable="false">100</string>
+    <string name="agent_sage_skill2_charge" translatable="false">2</string>
+    <string name="agent_sage_skill2_description">EQUIP a slowing orb. FIRE to throw a slowing orb forward that detonates upon landing, creating a lingering field that slows players caught inside of it.(7s, 50% slow)</string>
+    <string name="agent_sage_skill3_name">Healing Orb</string>
+    <string name="agent_sage_skill3_cost">45sec</string>
+    <string name="agent_sage_skill3_charge" translatable="false">1</string>
+    <string name="agent_sage_skill3_description">EQUIP a healing orb. FIRE with your crosshairs over a damaged ally to activate a heal-over-time on them. ALT FIRE while Sage is damaged to activate a self heal-over-time.</string>
+    <string name="agent_sage_skill4_name">Resurrection</string>
+    <string name="agent_sage_skill4_cost" translatable="false">7</string>
+    <string name="agent_sage_skill4_charge" translatable="false">1</string>
+    <string name="agent_sage_skill4_description">EQUIP a resurrection ability. FIRE with your crosshairs placed over a dead ally to begin resurrecting them. After a brief channel, the ally will be brought back to life with full health.</string>
+
+    <string name="agent_sova_name">Sova</string>
+    <string name="agent_sova_biography">Born from the eternal winter of Russia\'s tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. His custom bow and incredible scouting abilities ensure that even if you run, you cannot hide.</string>
+    <string name="agent_sova_comment">\"Wherever they run, I will find them.\"</string>
+    <string name="agent_sova_role">Initiator</string>
+    <string name="agent_sova_role_description">Initiators challenge angles by setting up their team to enter contested ground and push defenders away. You can expect to see lots of stuns and information gathering abilities with this class.</string>
+    <string name="agent_sova_skill1_name">Owl Drone</string>
+    <string name="agent_sova_skill1_cost" translatable="false">300</string>
+    <string name="agent_sova_skill1_charge" translatable="false">1</string>
+    <string name="agent_sova_skill1_description">EQUIP an owl drone. FIRE to deploy and take control of movement of the drone. While in control of the drone, FIRE to shoot a marking dart. This dart will reveal the location of any player struck by the dart.</string>
+    <string name="agent_sova_skill2_name">Shock Bolt</string>
+    <string name="agent_sova_skill2_cost" translatable="false">100</string>
+    <string name="agent_sova_skill2_charge" translatable="false">2</string>
+    <string name="agent_sova_skill2_description">EQUIP a bow with a shock bolt. FIRE to send the explosive forward, detonating upon collision and damaging players nearby. HOLD FIRE to extend the range of the projectile. ALTERNATE FIRE to add up to two bounces to this arrow.(max damage: 90)</string>
+    <string name="agent_sova_skill3_name">Recon Bolt</string>
+    <string name="agent_sova_skill3_cost">35sec</string>
+    <string name="agent_sova_skill3_charge" translatable="false">1</string>
+    <string name="agent_sova_skill3_description">EQUIP a bow with a recon bolt. FIRE to send the recon bolt forward, activating upon collision and revealing the location of nearby enemies caught in the line of sight of the bolt. HOLD FIRE to extend the range of the projectile. ALTERNATE FIRE to add up to two bounces to this arrow.</string>
+    <string name="agent_sova_skill4_name">Hunter\'s Fury</string>
+    <string name="agent_sova_skill4_cost" translatable="false">7</string>
+    <string name="agent_sova_skill4_charge" translatable="false">1</string>
+    <string name="agent_sova_skill4_description">EQUIP a bow with three long-range wall-piercing energy blasts. FIRE to release an energy blast in a line in front of Sova, dealing damage and revealing the location of enemies caught in the line. This ability can be RE-USED up to two more times while the ability timer is active.(80 damages per shot)</string>
+
+    <string name="agent_viper_name">Viper</string>
+    <string name="agent_viper_biography">The American chemist, Viper deploys an array of poisonous chemical devices to control the battlefield and cripple the enemy\'s vision. If the toxins don\'t kill her prey, her mind games surely will.</string>
+    <string name="agent_viper_comment">\"No one can hold their breath forever.\"</string>
+    <string name="agent_viper_role">Controller</string>
+    <string name="agent_viper_role_description">Controllers are experts in slicing up dangerous territory to set their team up for success. This class provides lots of utility in the form of slowing down the enemy players via Walls, Smokes that block Vision, and even Slows that can be placed on the ground.</string>
+    <string name="agent_viper_skill1_name">Snake Bite</string>
+    <string name="agent_viper_skill1_cost" translatable="false">100</string>
+    <string name="agent_viper_skill1_charge" translatable="false">2</string>
+    <string name="agent_viper_skill1_description">EQUIP a chemical launcher. FIRE to launch a canister that shatters upon hitting the floor, creating a lingering chemical zone that damages and slows enemies.</string>
+    <string name="agent_viper_skill2_name">Poison Cloud</string>
+    <string name="agent_viper_skill2_cost" translatable="false">200</string>
+    <string name="agent_viper_skill2_charge" translatable="false">1</string>
+    <string name="agent_viper_skill2_description">EQUIP a gas emitter. FIRE to throw the emitter that perpetually remains throughout the round. RE-USE the ability to create a toxic gas cloud at the cost of fuel. This ability can be RE-USED more than once and can be picked up to be REDEPLOYED.</string>
+    <string name="agent_viper_skill3_name">Toxic Screen</string>
+    <string name="agent_viper_skill3_cost">only once</string>
+    <string name="agent_viper_skill3_charge" translatable="false">1</string>
+    <string name="agent_viper_skill3_description">EQUIP a gas emitter launcher. FIRE to deploy a long line of gas emitters. RE-USE the ability to create a tall wall of toxic gas at the cost of fuel. This ability can be RE-USED more than once.</string>
+    <string name="agent_viper_skill4_name">Viper\'s Pit</string>
+    <string name="agent_viper_skill4_cost" translatable="false">7</string>
+    <string name="agent_viper_skill4_charge" translatable="false">1</string>
+    <string name="agent_viper_skill4_description">EQUIP a chemical sprayer. FIRE to spray a chemical cloud in all directions around Viper, creating a large cloud that reduces the vision range and maximum health of players inside of it.</string>
+
 </resources>

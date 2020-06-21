@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="agent"
+            type="com.jincal.valorantstory.recyclerview.Agent" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_main"
+        tools:context=".AgentInfoActivity">
+
+        <ImageView
+            android:id="@+id/AgentInfoStandingImageView"
+            android:layout_width="190dp"
+            android:layout_height="350dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@{agent.standingImageAddress}"
+            tools:srcCompat="@drawable/breach" />
+
+        <TextView
+            android:id="@+id/AgentInfoNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/font_jsdkregularfont"
+            android:gravity="start|center_vertical"
+            android:text="@{agent.name}"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/AgentInfoStandingImageView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/agent_breach_name" />
+
+        <TextView
+            android:id="@+id/AgentInfoRoleTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/font_jsdkregularfont"
+            android:gravity="start|center_vertical"
+            android:text="@{agent.role}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/AgentInfoRoleImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/AgentInfoRoleImageView"
+            app:layout_constraintTop_toBottomOf="@+id/AgentInfoNameTextView"
+            tools:text="Controller" />
+
+        <ImageView
+            android:id="@+id/AgentInfoRoleImageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_constraintStart_toEndOf="@+id/AgentInfoStandingImageView"
+            app:layout_constraintTop_toBottomOf="@+id/AgentInfoNameTextView"
+            app:srcCompat="@{agent.roleImageAddress}"
+            tools:srcCompat="@drawable/role_duelist" />
+
+        <TextView
+            android:id="@+id/AgentInfoCommentTextView"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="16dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/font_jsarirangfont"
+            android:text="@{agent.comment}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/AgentInfoStandingImageView"
+            app:layout_constraintTop_toBottomOf="@+id/AgentInfoRoleImageView"
+            tools:text="@string/agent_breach_comment" />
+
+        <TextView
+            android:id="@+id/AgentInfoBiographyTextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/font_jsdkregularfont"
+            android:scrollbars="vertical"
+            android:text="@{agent.biography}"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/AgentInfoStandingImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/AgentInfoStandingImageView"
+            app:layout_constraintTop_toBottomOf="@+id/AgentInfoCommentTextView"
+            tools:text="@string/agent_breach_biography" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/AgentInfoSkillsRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AgentInfoStandingImageView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
