@@ -4,7 +4,7 @@
     />
 <stroke
     android:width="3dp"
-    android:color="#5E35B1" />
+    android:color="@color/backgroundArsenal" />
 <gradient
     android:startColor="#443B55"
     android:endColor="#202753"

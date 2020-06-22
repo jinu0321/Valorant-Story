@@ -9,7 +9,7 @@ import com.jincal.valorantstory.AgentInfoActivity
 import com.jincal.valorantstory.R
 import com.jincal.valorantstory.`object`.ScreenSizeHolder
 import com.jincal.valorantstory.agent.Agent
-import kotlinx.android.synthetic.main.recyclerview_item_agent.view.*
+import kotlinx.android.synthetic.main.recyclerview_item_agent_card.view.*
 import org.jetbrains.anko.support.v4.startActivity
 
 class AgentContentsRecyclerViewAdapter(private val agents: Array<Agent>, val fragment: Fragment) :
@@ -30,7 +30,7 @@ class AgentContentsRecyclerViewAdapter(private val agents: Array<Agent>, val fra
         viewType: Int
     ): AgentViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.recyclerview_item_agent, parent, false)
+            .inflate(R.layout.recyclerview_item_agent_card, parent, false)
         view.layoutParams.height = ScreenSizeHolder.screenHeight / 8
         return AgentViewHolder(view)
     }

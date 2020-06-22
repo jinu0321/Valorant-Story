@@ -7,10 +7,12 @@ import com.jincal.valorantstory.`object`.FragmentManager
 import com.jincal.valorantstory.`object`.ScreenSizeHolder
 import com.jincal.valorantstory.`object`.StatusBarManager
 import com.jincal.valorantstory.`object`.ViewManager
+import com.jincal.valorantstory.arsenal.Arsenal
 import com.jincal.valorantstory.fragment.AgentContentsFragment
 import com.jincal.valorantstory.fragment.MapContentsFragment
 import com.jincal.valorantstory.fragment.WeaponContentsFragment
 import kotlinx.android.synthetic.main.activity_main.*
+import org.jetbrains.anko.toast
 
 class MainActivity : AppCompatActivity() {
 

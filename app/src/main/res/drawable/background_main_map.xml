@@ -4,7 +4,7 @@
     />
 <stroke
     android:width="3dp"
-    android:color="#FB8C00" />
+    android:color="@color/backgroundMap" />
 <gradient
     android:startColor="#443B55"
     android:endColor="#202753"
