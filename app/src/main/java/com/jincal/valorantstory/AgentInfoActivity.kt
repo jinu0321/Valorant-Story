@@ -19,7 +19,7 @@ class AgentInfoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         var binding: ActivityAgentInfoBinding = DataBindingUtil.setContentView(this, R.layout.activity_agent_info)
-        val agent = Agent(intent.getStringExtra("name"))
+        val agent = Agent(intent.getStringExtra("identifier")!!)
         binding.agent = agent
 
         AgentInfoStandingImageView.layoutParams.width = ScreenSizeHolder.screenWidth / 2

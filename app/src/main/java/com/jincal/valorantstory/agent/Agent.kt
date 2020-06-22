@@ -46,6 +46,7 @@ class Agent(val identifier: String) {
         AgentSkill(skill3Name, skill3Cost, skill3Charge, skill3Description, skill3Image, "E"),
         AgentSkill(skill4Name, skill4Cost, skill4Charge, skill4Description, skill4Image, "X"))
 
+    // below init...... completely bad(aspect of time wasting).. look at the Arsenal class' init!
     init {
         fun getString(address: Int) = ResourceAccessor.res!!.getString(address)
         when (identifier) {

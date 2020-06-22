@@ -14,14 +14,11 @@ import org.jetbrains.anko.support.v4.startActivity
 
 class AgentContentsRecyclerViewAdapter(private val agents: Array<Agent>, val fragment: Fragment) :
     RecyclerView.Adapter<AgentContentsRecyclerViewAdapter.AgentViewHolder>() {
-    inner class AgentViewHolder(val view: View) : RecyclerView.ViewHolder(view),
-        View.OnClickListener {
+    inner class AgentViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         init {
-            view.setOnClickListener(this)
-        }
-
-        override fun onClick(v: View?) {
-            fragment.startActivity<AgentInfoActivity>("name" to agents[adapterPosition].identifier)
+            view.setOnClickListener {
+                fragment.startActivity<AgentInfoActivity>("identifier" to agents[adapterPosition].identifier)
+            }
         }
     }
 

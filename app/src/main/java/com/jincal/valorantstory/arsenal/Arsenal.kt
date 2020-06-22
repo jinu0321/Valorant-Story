@@ -3,7 +3,7 @@ package com.jincal.valorantstory.arsenal
 import android.app.Activity
 import com.jincal.valorantstory.`object`.ResourceGetterWithIdentifier
 
-class Arsenal(identifier: String, activity: Activity) {
+class Arsenal(val identifier: String, activity: Activity) {
     var type = ""
     var name = ""
     var detailName = ""

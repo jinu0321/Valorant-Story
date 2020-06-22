@@ -43,7 +43,7 @@ class WeaponContentsFragment: Fragment() {
             Arsenal("odin", activity as Activity)
         )
         with(view.ArsenalContentsFragmentRecyclerView) {
-            adapter = ArsenalContentsRecyclerViewAdapter(arsenals)
+            adapter = ArsenalContentsRecyclerViewAdapter(arsenals, this@WeaponContentsFragment)
             layoutManager = LinearLayoutManager(activity)
             addItemDecoration(RecyclerViewDecoration(0, 3))
         }

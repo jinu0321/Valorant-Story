@@ -261,8 +261,9 @@
     <string name="arsenal_odin_primary_mode">완전 자동 사격, 연사시 사격속도 증가(최대 15.6)</string>
     <string name="arsenal_odin_alternate_description">조준경 1.25배, 완전 자동 사격, 탄퍼짐 약간 감소</string>
     <string name="arsenal_stinger_name">스팅어</string>
-    <string name="type">종류</string>
-    <string name="cost">비용</string>
-    <string name="ammo">탄창</string>
-    <string name="wall_penetration">벽 관통</string>
+    <string name="type">종류:</string>
+    <string name="cost">비용:</string>
+    <string name="ammo">탄창:</string>
+    <string name="wall_penetration">벽 관통:</string>
+    <string name="arsenal_tacticalknife_wall_penetration">없음</string>
 </resources>

@@ -257,18 +257,18 @@
     <string name="agent_viper_skill4_description">EQUIP a chemical sprayer. FIRE to spray a chemical cloud in all directions around Viper, creating a large cloud that reduces the vision range and maximum health of players inside of it.</string>
 
 
-
     <string name="unit_fire_rate_knife">hits/sec</string>
     <string name="unit_fire_rate">rounds/sec</string>
-    <string name="type">type</string>
-    <string name="cost">cost</string>
-    <string name="ammo">ammo</string>
-    <string name="wall_penetration">wall penetration</string>
+    <string name="type">type:</string>
+    <string name="cost">cost:</string>
+    <string name="ammo">ammo:</string>
+    <string name="wall_penetration">penetration:</string>
 
     <string name="arsenal_tacticalknife_name">Tactical Knife</string>
     <string name="arsenal_tacticalknife_type">Meele</string>
     <string name="arsenal_tacticalknife_detailname">Tactical Knife</string>
     <string name="arsenal_tacticalknife_cost" translatable="false">0</string>
+    <string name="arsenal_tacticalknife_wall_penetration">none</string>
     <string name="arsenal_tacticalknife_primary_firerate" translatable="false">2</string>
     <string name="arsenal_tacticalknife_primary_damage_forward" translatable="false">50</string>
     <string name="arsenal_tacticalknife_primary_damage_backward" translatable="false">100</string>
