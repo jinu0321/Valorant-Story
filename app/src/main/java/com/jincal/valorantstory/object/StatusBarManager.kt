@@ -1,7 +1,6 @@
 package com.jincal.valorantstory.`object`
 
 import android.app.Activity
-import android.graphics.Color
 import android.os.Build
 import android.view.WindowManager
 

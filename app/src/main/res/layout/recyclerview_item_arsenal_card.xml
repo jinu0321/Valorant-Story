@@ -13,46 +13,56 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:paddingStart="12dp"
-        android:paddingTop="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         app:srcCompat="@drawable/tacticalknife" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/ItemArsenalCardConstraintView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1">
 
-        <TextView
-            android:id="@+id/ItemArsenalCardNameTextView"
-            android:layout_width="0dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="28dp"
-            android:layout_marginEnd="24dp"
-            android:fontFamily="@font/font_jsdkregularfont"
-            android:gravity="center"
-            android:text="@string/arsenal_tacticalknife_name"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            app:autoSizeTextType="uniform"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:id="@+id/ItemArsenalCardConstraintView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="274dp">
 
-        <TextView
-            android:id="@+id/ItemArsenalCardTypeTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:fontFamily="@font/font_jsarirangfont"
-            android:text="@string/arsenal_tacticalknife_type"
-            android:textAllCaps="true"
-            android:textColor="#FFFFFF"
-            android:textSize="26sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ItemArsenalCardNameTextView" />
+            <TextView
+                android:id="@+id/ItemArsenalCardNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/font_jsdkregularfont"
+                android:gravity="center"
+                android:lines="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/arsenal_tacticalknife_name"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/ItemArsenalCardTypeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/font_jsarirangfont"
+                android:gravity="center"
+                android:lines="1"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:paddingBottom="10dp"
+                android:text="@string/arsenal_tacticalknife_type"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp" />
+
+        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </LinearLayout>

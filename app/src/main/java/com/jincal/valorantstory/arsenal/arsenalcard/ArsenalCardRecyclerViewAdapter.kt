@@ -24,7 +24,8 @@ class ArsenalCardRecyclerViewAdapter(val arsenals: Array<Arsenal>, val fragment:
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArsenalViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.recyclerview_item_arsenal_card, parent, false)
-        view.ItemArsenalCardImageView.layoutParams.height = ScreenSizeHolder.screenHeight / 7
+        view.layoutParams.height = ScreenSizeHolder.screenHeight / 8
+        view.ItemArsenalCardImageView.layoutParams.height = ScreenSizeHolder.screenHeight / 8
         return ArsenalViewHolder(view)
     }
 

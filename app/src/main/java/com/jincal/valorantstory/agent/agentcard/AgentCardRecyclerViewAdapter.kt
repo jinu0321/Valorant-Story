@@ -17,7 +17,7 @@ class AgentCardRecyclerViewAdapter(private val agents: Array<Agent>, val fragmen
     inner class AgentViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         init {
             view.setOnClickListener {
-                fragment.startActivity<AgentDetailActivity>("identifier" to agents[adapterPosition].identifier)
+                if (agents[adapterPosition].identifier != "questionmark") fragment.startActivity<AgentDetailActivity>("identifier" to agents[adapterPosition].identifier)
             }
         }
     }

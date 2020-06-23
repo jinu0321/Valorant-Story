@@ -29,7 +29,8 @@ class AgentContentsFragment(): Fragment() {
             Agent("Reyna"),
             Agent("Sage"),
             Agent("Sova"),
-            Agent("Viper")
+            Agent("Viper"),
+            Agent("questionmark")
         )
         val view = inflater.inflate(R.layout.fragment_contents_agent, container, false)
         view.AgentContentsFragmentRecyclerView.layoutManager = GridLayoutManager(activity, 2)
