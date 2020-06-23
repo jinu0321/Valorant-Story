@@ -5,19 +5,19 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
-import com.jincal.valorantstory.AgentInfoActivity
+import com.jincal.valorantstory.AgentDetailActivity
 import com.jincal.valorantstory.R
 import com.jincal.valorantstory.`object`.ScreenSizeHolder
 import com.jincal.valorantstory.agent.Agent
 import kotlinx.android.synthetic.main.recyclerview_item_agent_card.view.*
 import org.jetbrains.anko.support.v4.startActivity
 
-class AgentContentsRecyclerViewAdapter(private val agents: Array<Agent>, val fragment: Fragment) :
-    RecyclerView.Adapter<AgentContentsRecyclerViewAdapter.AgentViewHolder>() {
+class AgentCardRecyclerViewAdapter(private val agents: Array<Agent>, val fragment: Fragment) :
+    RecyclerView.Adapter<AgentCardRecyclerViewAdapter.AgentViewHolder>() {
     inner class AgentViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         init {
             view.setOnClickListener {
-                fragment.startActivity<AgentInfoActivity>("identifier" to agents[adapterPosition].identifier)
+                fragment.startActivity<AgentDetailActivity>("identifier" to agents[adapterPosition].identifier)
             }
         }
     }

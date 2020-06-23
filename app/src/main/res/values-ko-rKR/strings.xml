@@ -107,7 +107,7 @@
     <string name="agent_reyna_role">타격대</string>
     <string name="agent_reyna_role_description">타격대는 자급자족이 가능하며 팀에서 공격을 담당합니다. 스킬과 실력을 통해 먼저 교전을 시작하고 적을 처치합니다.</string>
     <string name="agent_reyna_skill1_name">눈총</string>
-    <string name="agent_reyna_skill1_description">파괴 가능한 천상의 눈을 장착합니다. 활성화하면 눈을 짧게 앞으로 던집니다. 눈을 본 적은 모두 시야가 제한됩니다.</string>
+    <string name="agent_reyna_skill1_description">파괴 가능한 천상의 눈을 장착합니다. 활성화하면 눈을 짧게 앞으로 던집니다. 눈을 본 적은 모두 시야가 제한됩니다.(천상의 눈은 벽을 통과할 수 있습니다.)</string>
     <string name="agent_reyna_skill2_name">포식</string>
     <string name="agent_reyna_skill2_description">레이나가 처치한 적은 3초 동안 유지되는 영혼 구슬을 남깁니다. 레이나는 즉시 근처에 있는 영혼 구슬을 흡수하여 짧은 시간 동안 순식간에 체력을 회복합니다. 이 스킬로 회복한 체력이 100을 넘어가면 초과분은 시간이 흐르면서 사라집니다. 여제가 활성화되면 이 스킬이 자동으로 사용되며 구슬을 흡수하지 않습니다.(코스트를 무시 스킬과 공유합니다.)</string>
     <string name="agent_reyna_skill3_name">무시</string>
@@ -175,7 +175,7 @@
     <string name="arsenal_shorty_type">보조 무기</string>
     <string name="arsenal_shorty_detailname">DBS-20 쇼티</string>
     <string name="arsenal_shorty_wall_penetration">낮음</string>
-    <string name="arsenal_shorty_primary_mode">반자동 사격</string>
+    <string name="arsenal_shorty_primary_mode">반자동 사격(산탄 15발)</string>
     <string name="arsenal_frenzy_name">프렌지</string>
     <string name="arsenal_frenzy_type">보조 무기</string>
     <string name="arsenal_frenzy_detailname">AMP-11 프렌지</string>
@@ -266,4 +266,16 @@
     <string name="ammo">탄창:</string>
     <string name="wall_penetration">벽 관통:</string>
     <string name="arsenal_tacticalknife_wall_penetration">없음</string>
+    <string name="primary_attack">일반 사격</string>
+    <string name="alternate_attack">조준 사격</string>
+    <string name="arsenal_tacticalknife_frontal_attack">전면 공격</string>
+    <string name="arsenal_tacticalknife_rear_attack">후면 공격</string>
+    <string name="primary_attack_knife">일반 공격</string>
+    <string name="alternate_attack_knife">찍기</string>
+    <string name="thankyou">뒤에서 찍으면 한방에 보냅니다!</string>
+    <string name="language">한국어</string>
+    <string name="map_ascent">어센트</string>
+    <string name="map_bind">바인드</string>
+    <string name="map_heaven">헤이븐</string>
+    <string name="map_split">스플릿</string>
 </resources>

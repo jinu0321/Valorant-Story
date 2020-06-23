@@ -12,16 +12,15 @@
         android:id="@+id/MainTabSelectLayout"
         android:layout_width="0dp"
         android:layout_height="80dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/MainTabAgents"
+            android:id="@+id/MainTabAgent"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -37,7 +36,7 @@
             app:autoSizeTextType="uniform" />
 
         <TextView
-            android:id="@+id/MainTabWeapons"
+            android:id="@+id/MainTabArsenal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -53,7 +52,7 @@
             app:autoSizeTextType="uniform" />
 
         <TextView
-            android:id="@+id/MainTabMaps"
+            android:id="@+id/MainTabMap"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -74,10 +73,7 @@
         android:name="com.jincal.valorantstory.fragment.AgentContentsFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="4dp"
+        android:padding="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

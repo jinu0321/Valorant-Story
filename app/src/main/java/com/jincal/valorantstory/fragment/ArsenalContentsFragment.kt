@@ -7,21 +7,20 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.jincal.valorantstory.MainActivity
 import com.jincal.valorantstory.R
 import com.jincal.valorantstory.agent.agentcard.RecyclerViewDecoration
 import com.jincal.valorantstory.arsenal.Arsenal
-import com.jincal.valorantstory.arsenal.arsenalcard.ArsenalContentsRecyclerViewAdapter
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_contents_weapon.view.*
+import com.jincal.valorantstory.arsenal.arsenalcard.ArsenalCardRecyclerViewAdapter
+import kotlinx.android.synthetic.main.fragment_contents_arsenal.view.*
+import kotlinx.android.synthetic.main.recyclerview_item_map_card.view.*
 
-class WeaponContentsFragment: Fragment() {
+class ArsenalContentsFragment: Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_contents_weapon, container, false)
+        val view = inflater.inflate(R.layout.fragment_contents_arsenal, container, false)
         val arsenals = arrayOf(
             Arsenal("tacticalknife", activity as Activity),
             Arsenal("classic", activity as Activity),
@@ -43,9 +42,9 @@ class WeaponContentsFragment: Fragment() {
             Arsenal("odin", activity as Activity)
         )
         with(view.ArsenalContentsFragmentRecyclerView) {
-            adapter = ArsenalContentsRecyclerViewAdapter(arsenals, this@WeaponContentsFragment)
+            adapter = ArsenalCardRecyclerViewAdapter(arsenals, this@ArsenalContentsFragment)
             layoutManager = LinearLayoutManager(activity)
-            addItemDecoration(RecyclerViewDecoration(0, 3))
+            addItemDecoration(RecyclerViewDecoration(3, 3))
         }
         return view
     }

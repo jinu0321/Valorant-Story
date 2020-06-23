@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Valorant Story</string>
+    <string name="language">English</string>
 
     <string name="color_deep_pink" translatable="false">#FF1493</string>
     <string name="color_white" translatable="false">#FFFFFF</string>
@@ -176,7 +177,7 @@
     <string name="agent_reyna_skill1_name">Leer</string>
     <string name="agent_reyna_skill1_cost" translatable="false">200</string>
     <string name="agent_reyna_skill1_charge" translatable="false">2</string>
-    <string name="agent_reyna_skill1_description">EQUIP an ethereal destructible eye. ACTIVATE to cast the eye a short distance forward. The eye will Nearsight all enemies who look at it.</string>
+    <string name="agent_reyna_skill1_description">EQUIP an ethereal destructible eye. ACTIVATE to cast the eye a short distance forward. The eye will Nearsight all enemies who look at it.(the eye can pass through any wall)</string>
     <string name="agent_reyna_skill2_name">Devour</string>
     <string name="agent_reyna_skill2_cost" translatable="false">100</string>
     <string name="agent_reyna_skill2_charge" translatable="false">4</string>
@@ -263,6 +264,10 @@
     <string name="cost">cost:</string>
     <string name="ammo">ammo:</string>
     <string name="wall_penetration">penetration:</string>
+    <string name="primary_attack">Primary Attack</string>
+    <string name="alternate_attack">Alternate Attack</string>
+    <string name="primary_attack_knife">Primary Attack</string>
+    <string name="alternate_attack_knife">Alternate Attack</string>
 
     <string name="arsenal_tacticalknife_name">Tactical Knife</string>
     <string name="arsenal_tacticalknife_type">Meele</string>
@@ -272,6 +277,8 @@
     <string name="arsenal_tacticalknife_primary_firerate" translatable="false">2</string>
     <string name="arsenal_tacticalknife_primary_damage_forward" translatable="false">50</string>
     <string name="arsenal_tacticalknife_primary_damage_backward" translatable="false">100</string>
+    <string name="arsenal_tacticalknife_frontal_attack">Frontal Attack</string>
+    <string name="arsenal_tacticalknife_rear_attack">Rear Attack</string>
     <string name="arsenal_tacticalknife_alternate_firerate" translatable="false">0.8</string>
     <string name="arsenal_tacticalknife_alternate_damage_forward" translatable="false">75</string>
     <string name="arsenal_tacticalknife_alternate_damage_backward" translatable="false">150</string>
@@ -303,7 +310,7 @@
     <string name="arsenal_shorty_magazine_one" translatable="false">2</string>
     <string name="arsenal_shorty_magazine_whole" translatable="false">10</string>
     <string name="arsenal_shorty_wall_penetration">Low</string>
-    <string name="arsenal_shorty_primary_mode">Semi-Automatic</string>
+    <string name="arsenal_shorty_primary_mode">Semi-Automatic(15shots)</string>
     <string name="arsenal_shorty_primary_firerate" translatable="false">3.3</string>
     <string name="arsenal_shorty_distance1" translatable="false">0~9m</string>
     <string name="arsenal_shorty_distance1_head" translatable="false">36</string>
@@ -599,5 +606,10 @@
     <string name="arsenal_odin_distance2_head" translatable="false">77</string>
     <string name="arsenal_odin_distance2_body" translatable="false">31</string>
     <string name="arsenal_odin_distance2_leg" translatable="false">26</string>
+    <string name="thankyou">Rear alternate attack will send the enemy to heaven.</string>
 
+    <string name="map_ascent">Ascent</string>
+    <string name="map_bind">Bind</string>
+    <string name="map_heaven">Heaven</string>
+    <string name="map_split">Split</string>
 </resources>

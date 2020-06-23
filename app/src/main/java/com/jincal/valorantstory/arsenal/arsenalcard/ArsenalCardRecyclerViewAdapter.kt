@@ -1,6 +1,5 @@
 package com.jincal.valorantstory.arsenal.arsenalcard
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,8 +12,8 @@ import com.jincal.valorantstory.arsenal.Arsenal
 import kotlinx.android.synthetic.main.recyclerview_item_arsenal_card.view.*
 import org.jetbrains.anko.support.v4.startActivity
 
-class ArsenalContentsRecyclerViewAdapter(val arsenals: Array<Arsenal>, val fragment: Fragment):
-    RecyclerView.Adapter<ArsenalContentsRecyclerViewAdapter.ArsenalViewHolder>() {
+class ArsenalCardRecyclerViewAdapter(val arsenals: Array<Arsenal>, val fragment: Fragment):
+    RecyclerView.Adapter<ArsenalCardRecyclerViewAdapter.ArsenalViewHolder>() {
     inner class ArsenalViewHolder(val view: View): RecyclerView.ViewHolder(view) {
         init {
             view.setOnClickListener {

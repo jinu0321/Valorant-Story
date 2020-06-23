@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import com.jincal.valorantstory.R
 import com.jincal.valorantstory.agent.Agent
-import com.jincal.valorantstory.agent.agentcard.AgentContentsRecyclerViewAdapter
+import com.jincal.valorantstory.agent.agentcard.AgentCardRecyclerViewAdapter
 import com.jincal.valorantstory.agent.agentcard.RecyclerViewDecoration
 import kotlinx.android.synthetic.main.fragment_contents_agent.view.*
 
@@ -34,7 +34,7 @@ class AgentContentsFragment(): Fragment() {
         val view = inflater.inflate(R.layout.fragment_contents_agent, container, false)
         view.AgentContentsFragmentRecyclerView.layoutManager = GridLayoutManager(activity, 2)
         view.AgentContentsFragmentRecyclerView.adapter =
-            AgentContentsRecyclerViewAdapter(
+            AgentCardRecyclerViewAdapter(
                 agents,
                 this
             )

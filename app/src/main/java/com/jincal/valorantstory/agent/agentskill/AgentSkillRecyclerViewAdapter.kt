@@ -30,7 +30,8 @@ class AgentSkillRecyclerViewAdapter(private val agentSkillArray: Array<Agent.Age
             ItemAgentSkillCommandTextView.text = agentSkill.skillCommand
             ItemAgentSkillImage.setImageResource(agentSkill.skillImage)
             if (agentSkillArray[position].skillCost.contains('초') || agentSkillArray[position].skillCost.contains("sec")
-                || agentSkillArray[position].skillCost.contains("처치")|| agentSkillArray[position].skillCost.contains("kill")) {
+                || agentSkillArray[position].skillCost.contains("처치")|| agentSkillArray[position].skillCost.contains("kill")
+                || agentSkillArray[position].skillCost.contains("불가") || agentSkillArray[position].skillCost.contains("once")) {
                 ItemAgentSkillCredTextView.text = ""
             }
             if (agentSkill == agentSkillArray[3]) {

@@ -7,12 +7,10 @@ import com.jincal.valorantstory.`object`.FragmentManager
 import com.jincal.valorantstory.`object`.ScreenSizeHolder
 import com.jincal.valorantstory.`object`.StatusBarManager
 import com.jincal.valorantstory.`object`.ViewManager
-import com.jincal.valorantstory.arsenal.Arsenal
 import com.jincal.valorantstory.fragment.AgentContentsFragment
 import com.jincal.valorantstory.fragment.MapContentsFragment
-import com.jincal.valorantstory.fragment.WeaponContentsFragment
+import com.jincal.valorantstory.fragment.ArsenalContentsFragment
 import kotlinx.android.synthetic.main.activity_main.*
-import org.jetbrains.anko.toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,26 +20,30 @@ class MainActivity : AppCompatActivity() {
         ScreenSizeHolder.getPixelInfo(this)
         ViewManager.setHeightOf(MainTabSelectLayout, ScreenSizeHolder.screenHeight/8)
 
-        MainTabAgents.setOnClickListener {
-            ViewManager.highlightSelectedTab(it as TextView, MainTabWeapons, MainTabMaps)
+        MainTabAgent.setOnClickListener {
+            ViewManager.highlightSelectedTab(it as TextView, MainTabArsenal, MainTabMap, "#00897B")
             MainBackgroundConstraintLayout.background = getDrawable(R.drawable.background_main_agent)
             StatusBarManager.changeStausBarColor(this, R.color.backgroundAgent)
             FragmentManager.replaceFragmentInContainer(R.id.MainContentsFragmentContainer, AgentContentsFragment(), this)
+            MainContentsFragmentContainer.setBackgroundResource(R.drawable.background_main_agent)
         }
-        MainTabWeapons.setOnClickListener {
-            ViewManager.highlightSelectedTab(it as TextView, MainTabAgents, MainTabMaps)
+        MainTabArsenal.setOnClickListener {
+            ViewManager.highlightSelectedTab(it as TextView, MainTabAgent, MainTabMap, "#7C46EA")
             MainBackgroundConstraintLayout.background = getDrawable(R.drawable.background_main_arsenal)
             StatusBarManager.changeStausBarColor(this, R.color.backgroundArsenal)
-            FragmentManager.replaceFragmentInContainer(R.id.MainContentsFragmentContainer, WeaponContentsFragment(), this)
+            FragmentManager.replaceFragmentInContainer(R.id.MainContentsFragmentContainer, ArsenalContentsFragment(), this)
+            MainContentsFragmentContainer.setBackgroundResource(R.drawable.background_main_arsenal)
         }
-        MainTabMaps.setOnClickListener {
-            ViewManager.highlightSelectedTab(it as TextView, MainTabWeapons, MainTabAgents)
+        MainTabMap.setOnClickListener {
+            ViewManager.highlightSelectedTab(it as TextView, MainTabArsenal, MainTabAgent, "#F19E36")
             MainBackgroundConstraintLayout.background = getDrawable(R.drawable.background_main_map)
             StatusBarManager.changeStausBarColor(this, R.color.backgroundMap)
             FragmentManager.replaceFragmentInContainer(R.id.MainContentsFragmentContainer, MapContentsFragment(), this)
+            MainContentsFragmentContainer.setBackgroundResource(R.drawable.background_main_map)
         }
         // select agent tab initially
-        ViewManager.highlightSelectedTab(MainTabAgents as TextView, MainTabWeapons, MainTabMaps)
+        ViewManager.highlightSelectedTab(MainTabAgent as TextView, MainTabArsenal, MainTabMap, "#00897B")
         FragmentManager.replaceFragmentInContainer(R.id.MainContentsFragmentContainer, AgentContentsFragment(), this)
+        MainContentsFragmentContainer.setBackgroundResource(R.drawable.background_main_agent)
     }
 }

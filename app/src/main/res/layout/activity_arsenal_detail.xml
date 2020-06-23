@@ -7,148 +7,483 @@
     android:background="@drawable/background_main_arsenal"
     tools:context=".ArsenalDetailActivity">
 
-    <ImageView
-        android:id="@+id/ArsenalDetailImageView"
-        android:layout_width="0dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/tacticalknife" />
 
-    <TextView
-        android:id="@+id/ArsenalDetailNameTextView"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="48dp"
-        android:fontFamily="@font/font_jsdkregularfont"
-        android:gravity="center"
-        android:text="@string/arsenal_tacticalknife_name"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        app:autoSizeTextType="uniform"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_item_arsenal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ArsenalDetailImageView" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ArsenalDetailImageView"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/classic" />
+
+        <TextView
+            android:id="@+id/ArsenalDetailNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="48dp"
+            android:fontFamily="@font/font_jsdkregularfont"
+            android:gravity="center"
+            android:text="@string/arsenal_classic_name"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold|italic"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ArsenalDetailImageView" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ArsenalDetailNameTextView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/font_jsdkregularfont"
+                    android:gravity="center_vertical|end"
+                    android:paddingEnd="4dp"
+                    android:text="@string/type"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/ArsenalDetailTypeTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/font_jsarirangfont"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/arsenal_classic_type"
+                    android:textColor="#FFFFFF"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/font_jsdkregularfont"
+                    android:gravity="center_vertical|end"
+                    android:paddingEnd="4dp"
+                    android:text="@string/cost"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/ArsenalDetailCostTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/font_jsarirangfont"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/arsenal_tacticalknife_cost"
+                    android:textColor="#FFFFFF"
+                    app:autoSizeTextType="uniform" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/font_jsdkregularfont"
+                    android:gravity="center_vertical|end"
+                    android:paddingEnd="4dp"
+                    android:text="@string/ammo"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/ArsenalDetailAmmoTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/font_jsarirangfont"
+                    android:gravity="start|center_vertical"
+                    android:text="12 / 36"
+                    android:textColor="#FFFFFF"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/font_jsdkregularfont"
+                    android:gravity="center_vertical|end"
+                    android:paddingEnd="4dp"
+                    android:text="@string/wall_penetration"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/ArsenalDetailWallPenetrationTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/font_jsarirangfont"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/arsenal_classic_wall_penetration"
+                    android:textColor="#FFFFFF"
+                    app:autoSizeTextType="uniform" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ArsenalDetailPrimaryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_item_arsenal">
+
+            <TextView
+                android:id="@+id/ArsenalDetailPrimaryAttackTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/font_jsdkregularfont"
+                android:text="@string/primary_attack"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ArsenalDetailPrimaryModeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/font_jsdkregularfont"
+                android:gravity="center"
+                android:text="@string/arsenal_classic_primary_mode"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toTopOf="@+id/ArsenalDetailPrimaryFirerateTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ArsenalDetailPrimaryAttackTextView" />
+
+            <TextView
+                android:id="@+id/ArsenalDetailPrimaryFirerateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/font_jsdkregularfont"
+                android:text="@string/arsenal_classic_primary_firerate"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ArsenalDetailPrimaryModeTextView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ArsenalDetailAlternateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_item_arsenal">
+
+            <TextView
+                android:id="@+id/ArsenalDetailAlternateAttackTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/font_jsdkregularfont"
+                android:text="@string/alternate_attack"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ArsenalDetailAlternateDescriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/font_jsdkregularfont"
+                android:gravity="center"
+                android:text="@string/arsenal_classic_alternate_description"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toTopOf="@+id/ArsenalDetailAlternateFirerateTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ArsenalDetailAlternateAttackTextView" />
+
+            <TextView
+                android:id="@+id/ArsenalDetailAlternateFirerateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_jsdkregularfont"
+                android:gravity="center"
+                android:text="@string/arsenal_classic_alternate_firerate"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ArsenalDetailAlternateDescriptionTextView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="16dp"
-        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ArsenalDetailNameTextView">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
-        <LinearLayout
+        <ImageView
+            android:id="@+id/ArsenalDetailManikinImageView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:background="@drawable/background_item_arsenal"
+            android:paddingTop="50dp"
+            app:srcCompat="@drawable/brimstone" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:fontFamily="@font/font_jsdkregularfont"
-                android:gravity="center_vertical|end"
-                android:paddingEnd="4dp"
-                android:text="@string/type"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/ArsenalDetailTypeTextView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:fontFamily="@font/font_jsarirangfont"
-                android:gravity="start|center_vertical"
-                android:text="@string/arsenal_tacticalknife_type"
-                android:textColor="#FFFFFF"
-                app:autoSizeTextType="uniform" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:fontFamily="@font/font_jsdkregularfont"
-                android:gravity="center_vertical|end"
-                android:paddingEnd="4dp"
-                android:text="@string/cost"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/ArsenalDetailCostTextView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:fontFamily="@font/font_jsarirangfont"
-                android:gravity="start|center_vertical"
-                android:text="@string/arsenal_tacticalknife_cost"
-                android:textColor="#FFFFFF"
-                app:autoSizeTextType="uniform" />
-
-        </LinearLayout>
-
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ArsenalDetailDistance1Layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:background="@drawable/background_item_arsenal">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:id="@+id/ArsenalDetailDistance1DistanceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:fontFamily="@font/font_jsdkregularfont"
-                android:gravity="center_vertical|end"
-                android:paddingEnd="4dp"
-                android:text="@string/ammo"
+                android:text="@string/arsenal_classic_distance1"
                 android:textColor="#FFFFFF"
-                android:textSize="14sp" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/ArsenalDetailAmmoTextView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:fontFamily="@font/font_jsarirangfont"
-                android:gravity="start|center_vertical"
-                android:text="0 / 0"
-                android:textColor="#FFFFFF"
-                app:autoSizeTextType="uniform" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:id="@+id/ArsenalDetailDistance1HeadTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/font_jsdkregularfont"
-                android:gravity="center_vertical|end"
-                android:paddingEnd="4dp"
-                android:text="@string/wall_penetration"
+                android:text="@string/arsenal_classic_distance1_head"
                 android:textColor="#FFFFFF"
-                android:textSize="14sp" />
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/ArsenalDetailDistance1BodyTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ArsenalDetailDistance1DistanceTextView" />
 
             <TextView
-                android:id="@+id/ArsenalDetailWallPenetrationTextView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:fontFamily="@font/font_jsarirangfont"
-                android:gravity="start|center_vertical"
-                android:text="none"
+                android:id="@+id/ArsenalDetailDistance1BodyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_jsdkregularfont"
+                android:text="@string/arsenal_classic_distance1_body"
                 android:textColor="#FFFFFF"
-                app:autoSizeTextType="uniform" />
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/ArsenalDetailDistance1LegTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ArsenalDetailDistance1HeadTextView" />
 
-        </LinearLayout>
+            <TextView
+                android:id="@+id/ArsenalDetailDistance1LegTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_jsdkregularfont"
+                android:text="@string/arsenal_classic_distance1_leg"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ArsenalDetailDistance1BodyTextView" />
 
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ArsenalDetailDistance2Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_item_arsenal">
+
+            <TextView
+                android:id="@+id/ArsenalDetailDistance2DistanceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/font_jsdkregularfont"
+                android:text="@string/arsenal_classic_distance2"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ArsenalDetailDistance2HeadTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_jsdkregularfont"
+                android:text="@string/arsenal_classic_distance2_head"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/ArsenalDetailDistance2BodyTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ArsenalDetailDistance2DistanceTextView" />
+
+            <TextView
+                android:id="@+id/ArsenalDetailDistance2BodyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_jsdkregularfont"
+                android:text="@string/arsenal_classic_distance2_body"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/ArsenalDetailDistance2LegTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ArsenalDetailDistance2HeadTextView" />
+
+            <TextView
+                android:id="@+id/ArsenalDetailDistance2LegTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_jsdkregularfont"
+                android:text="@string/arsenal_classic_distance2_leg"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ArsenalDetailDistance2BodyTextView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ArsenalDetailDistance3Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_item_arsenal">
+
+            <TextView
+                android:id="@+id/ArsenalDetailDistance3DistanceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/font_jsdkregularfont"
+                android:text="@string/arsenal_classic_distance2"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ArsenalDetailDistance3HeadTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_jsdkregularfont"
+                android:text="@string/arsenal_classic_distance2_head"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/ArsenalDetailDistance3BodyTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ArsenalDetailDistance3DistanceTextView" />
+
+            <TextView
+                android:id="@+id/ArsenalDetailDistance3BodyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_jsdkregularfont"
+                android:text="@string/arsenal_classic_distance2_body"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/ArsenalDetailDistance3LegTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ArsenalDetailDistance3HeadTextView" />
+
+            <TextView
+                android:id="@+id/ArsenalDetailDistance3LegTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_jsdkregularfont"
+                android:text="@string/arsenal_classic_distance2_leg"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ArsenalDetailDistance3BodyTextView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
