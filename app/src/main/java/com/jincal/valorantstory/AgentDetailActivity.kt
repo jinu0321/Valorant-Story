@@ -8,18 +8,18 @@ import androidx.databinding.BindingAdapter
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.jincal.valorantstory.`object`.ScreenSizeHolder
-import com.jincal.valorantstory.databinding.ActivityAgentInfoBinding
-import com.jincal.valorantstory.recyclerview.Agent
-import com.jincal.valorantstory.recyclerview.agentcard.RecyclerViewDecoration
-import com.jincal.valorantstory.recyclerview.agentskill.AgentSkillRecyclerViewAdapter
-import kotlinx.android.synthetic.main.activity_agent_info.*
+import com.jincal.valorantstory.agent.Agent
+import com.jincal.valorantstory.agent.agentcard.RecyclerViewDecoration
+import com.jincal.valorantstory.agent.agentskill.AgentSkillRecyclerViewAdapter
+import com.jincal.valorantstory.databinding.ActivityAgentDetailBinding
+import kotlinx.android.synthetic.main.activity_agent_detail.*
 
-class AgentInfoActivity : AppCompatActivity() {
+class AgentDetailActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        var binding: ActivityAgentInfoBinding = DataBindingUtil.setContentView(this, R.layout.activity_agent_info)
-        val agent = Agent(intent.getStringExtra("name"))
+        var binding: ActivityAgentDetailBinding = DataBindingUtil.setContentView(this, R.layout.activity_agent_detail)
+        val agent = Agent(intent.getStringExtra("identifier")!!)
         binding.agent = agent
 
         AgentInfoStandingImageView.layoutParams.width = ScreenSizeHolder.screenWidth / 2
@@ -36,13 +36,11 @@ class AgentInfoActivity : AppCompatActivity() {
 
         binding.AgentInfoSkillsRecyclerView.apply {
             adapter = AgentSkillRecyclerViewAdapter(agent.getAgentSkillArray())
-            layoutManager = LinearLayoutManager(this@AgentInfoActivity)
+            layoutManager = LinearLayoutManager(this@AgentDetailActivity)
             addItemDecoration(RecyclerViewDecoration(0, 3))
         }
     }
-
 }
-
 @BindingAdapter("app:srcCompat")
 fun setImageResource(imageView: ImageView, resource: Int) {
     imageView.setImageResource(resource)

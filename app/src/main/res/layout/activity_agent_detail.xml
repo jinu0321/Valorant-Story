@@ -5,13 +5,13 @@
     <data>
         <variable
             name="agent"
-            type="com.jincal.valorantstory.recyclerview.Agent" />
+            type="com.jincal.valorantstory.agent.Agent" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background_main"
-        tools:context=".AgentInfoActivity">
+        android:background="@drawable/background_main_agent"
+        tools:context=".AgentDetailActivity">
 
         <ImageView
             android:id="@+id/AgentInfoStandingImageView"

@@ -3,8 +3,8 @@
 <solid
     />
 <stroke
-    android:width="5dp"
-    android:color="#EF287B" />
+    android:width="3dp"
+    android:color="@color/backgroundAgent" />
 <gradient
     android:startColor="#443B55"
     android:endColor="#202753"

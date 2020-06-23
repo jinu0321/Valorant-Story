@@ -2,64 +2,70 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainBackgroundConstraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_main"
-    tools:context=".MainActivity" >
+    android:background="@drawable/background_main_agent"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:id="@+id/MainTabSelectLayout"
         android:layout_width="0dp"
         android:layout_height="80dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/MainTabAgents"
+            android:id="@+id/MainTabAgent"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/background_tabselector"
             android:fontFamily="@font/jsdkregular"
             android:gravity="center"
+            android:padding="20dp"
             android:text="@string/main_tab_agents"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
 
         <TextView
-            android:id="@+id/MainTabWeapons"
+            android:id="@+id/MainTabArsenal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/background_tabselector"
             android:fontFamily="@font/jsdkregular"
             android:gravity="center"
+            android:padding="20dp"
             android:text="@string/main_tab_weapons"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
 
         <TextView
-            android:id="@+id/MainTabMaps"
+            android:id="@+id/MainTabMap"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/background_tabselector"
             android:fontFamily="@font/jsdkregular"
             android:gravity="center"
+            android:padding="20dp"
             android:text="@string/main_tab_maps"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
     </LinearLayout>
 
     <FrameLayout
@@ -67,6 +73,7 @@
         android:name="com.jincal.valorantstory.fragment.AgentContentsFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:padding="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

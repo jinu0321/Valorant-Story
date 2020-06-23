@@ -1,15 +1,13 @@
-package com.jincal.valorantstory.recyclerview.agentskill
+package com.jincal.valorantstory.agent.agentskill
 
 import android.os.Build
-import android.text.method.ScrollingMovementMethod
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.jincal.valorantstory.R
 import com.jincal.valorantstory.ResourceAccessor
-import com.jincal.valorantstory.`object`.ScreenSizeHolder
-import com.jincal.valorantstory.recyclerview.Agent
+import com.jincal.valorantstory.agent.Agent
 import kotlinx.android.synthetic.main.recyclerview_item_agent_skill.view.*
 
 class AgentSkillRecyclerViewAdapter(private val agentSkillArray: Array<Agent.AgentSkill>): RecyclerView.Adapter<AgentSkillRecyclerViewAdapter.AgentSkillViewHolder>() {
@@ -32,7 +30,8 @@ class AgentSkillRecyclerViewAdapter(private val agentSkillArray: Array<Agent.Age
             ItemAgentSkillCommandTextView.text = agentSkill.skillCommand
             ItemAgentSkillImage.setImageResource(agentSkill.skillImage)
             if (agentSkillArray[position].skillCost.contains('초') || agentSkillArray[position].skillCost.contains("sec")
-                || agentSkillArray[position].skillCost.contains("처치")|| agentSkillArray[position].skillCost.contains("kill")) {
+                || agentSkillArray[position].skillCost.contains("처치")|| agentSkillArray[position].skillCost.contains("kill")
+                || agentSkillArray[position].skillCost.contains("불가") || agentSkillArray[position].skillCost.contains("once")) {
                 ItemAgentSkillCredTextView.text = ""
             }
             if (agentSkill == agentSkillArray[3]) {

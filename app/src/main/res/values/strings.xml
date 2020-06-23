@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Valorant Story</string>
+    <string name="language">English</string>
 
     <string name="color_deep_pink" translatable="false">#FF1493</string>
     <string name="color_white" translatable="false">#FFFFFF</string>
@@ -10,7 +11,7 @@
     <string name="point">points</string>
 
     <string name="main_tab_agents">Agent</string>
-    <string name="main_tab_weapons">Weapon</string>
+    <string name="main_tab_weapons">Arsenal</string>
     <string name="main_tab_maps">Map</string>
 
 
@@ -176,7 +177,7 @@
     <string name="agent_reyna_skill1_name">Leer</string>
     <string name="agent_reyna_skill1_cost" translatable="false">200</string>
     <string name="agent_reyna_skill1_charge" translatable="false">2</string>
-    <string name="agent_reyna_skill1_description">EQUIP an ethereal destructible eye. ACTIVATE to cast the eye a short distance forward. The eye will Nearsight all enemies who look at it.</string>
+    <string name="agent_reyna_skill1_description">EQUIP an ethereal destructible eye. ACTIVATE to cast the eye a short distance forward. The eye will Nearsight all enemies who look at it.(the eye can pass through any wall)</string>
     <string name="agent_reyna_skill2_name">Devour</string>
     <string name="agent_reyna_skill2_cost" translatable="false">100</string>
     <string name="agent_reyna_skill2_charge" translatable="false">4</string>
@@ -256,4 +257,359 @@
     <string name="agent_viper_skill4_charge" translatable="false">1</string>
     <string name="agent_viper_skill4_description">EQUIP a chemical sprayer. FIRE to spray a chemical cloud in all directions around Viper, creating a large cloud that reduces the vision range and maximum health of players inside of it.</string>
 
+
+    <string name="unit_fire_rate_knife">hits/sec</string>
+    <string name="unit_fire_rate">rounds/sec</string>
+    <string name="type">type:</string>
+    <string name="cost">cost:</string>
+    <string name="ammo">ammo:</string>
+    <string name="wall_penetration">penetration:</string>
+    <string name="primary_attack">Primary Attack</string>
+    <string name="alternate_attack">Alternate Attack</string>
+    <string name="primary_attack_knife">Primary Attack</string>
+    <string name="alternate_attack_knife">Alternate Attack</string>
+
+    <string name="arsenal_tacticalknife_name">Tactical Knife</string>
+    <string name="arsenal_tacticalknife_type">Meele</string>
+    <string name="arsenal_tacticalknife_detailname">Tactical Knife</string>
+    <string name="arsenal_tacticalknife_cost" translatable="false">0</string>
+    <string name="arsenal_tacticalknife_wall_penetration">none</string>
+    <string name="arsenal_tacticalknife_primary_firerate" translatable="false">2</string>
+    <string name="arsenal_tacticalknife_primary_damage_forward" translatable="false">50</string>
+    <string name="arsenal_tacticalknife_primary_damage_backward" translatable="false">100</string>
+    <string name="arsenal_tacticalknife_frontal_attack">Frontal Attack</string>
+    <string name="arsenal_tacticalknife_rear_attack">Rear Attack</string>
+    <string name="arsenal_tacticalknife_alternate_firerate" translatable="false">0.8</string>
+    <string name="arsenal_tacticalknife_alternate_damage_forward" translatable="false">75</string>
+    <string name="arsenal_tacticalknife_alternate_damage_backward" translatable="false">150</string>
+
+    <string name="arsenal_classic_name">Classic</string>
+    <string name="arsenal_classic_type">Sidearm</string>
+    <string name="arsenal_classic_detailname">BP-9 Classic</string>
+    <string name="arsenal_classic_cost" translatable="false">0</string>
+    <string name="arsenal_classic_magazine_one" translatable="false">12</string>
+    <string name="arsenal_classic_magazine_whole" translatable="false">36</string>
+    <string name="arsenal_classic_wall_penetration">Low</string>
+    <string name="arsenal_classic_primary_mode">Semi-Automatic</string>
+    <string name="arsenal_classic_primary_firerate" translatable="false">6.75</string>
+    <string name="arsenal_classic_alternate_description">3-round burst, spread increased</string>
+    <string name="arsenal_classic_alternate_firerate" translatable="false">2.22</string>
+    <string name="arsenal_classic_distance1" translatable="false">0~30m</string>
+    <string name="arsenal_classic_distance1_head" translatable="false">78</string>
+    <string name="arsenal_classic_distance1_body" translatable="false">26</string>
+    <string name="arsenal_classic_distance1_leg" translatable="false">22</string>
+    <string name="arsenal_classic_distance2" translatable="false">30~50m</string>
+    <string name="arsenal_classic_distance2_head" translatable="false">66</string>
+    <string name="arsenal_classic_distance2_body" translatable="false">22</string>
+    <string name="arsenal_classic_distance2_leg" translatable="false">18</string>
+
+    <string name="arsenal_shorty_name">shorty</string>
+    <string name="arsenal_shorty_type">Sidearm</string>
+    <string name="arsenal_shorty_detailname">DBS-20 Shorty</string>
+    <string name="arsenal_shorty_cost" translatable="false">200</string>
+    <string name="arsenal_shorty_magazine_one" translatable="false">2</string>
+    <string name="arsenal_shorty_magazine_whole" translatable="false">10</string>
+    <string name="arsenal_shorty_wall_penetration">Low</string>
+    <string name="arsenal_shorty_primary_mode">Semi-Automatic(15shots)</string>
+    <string name="arsenal_shorty_primary_firerate" translatable="false">3.3</string>
+    <string name="arsenal_shorty_distance1" translatable="false">0~9m</string>
+    <string name="arsenal_shorty_distance1_head" translatable="false">36</string>
+    <string name="arsenal_shorty_distance1_body" translatable="false">12</string>
+    <string name="arsenal_shorty_distance1_leg" translatable="false">10</string>
+    <string name="arsenal_shorty_distance2" translatable="false">9~15m</string>
+    <string name="arsenal_shorty_distance2_head" translatable="false">24</string>
+    <string name="arsenal_shorty_distance2_body" translatable="false">8</string>
+    <string name="arsenal_shorty_distance2_leg" translatable="false">6</string>
+    <string name="arsenal_shorty_distance3" translatable="false">15~50m</string>
+    <string name="arsenal_shorty_distance3_head" translatable="false">9</string>
+    <string name="arsenal_shorty_distance3_body" translatable="false">3</string>
+    <string name="arsenal_shorty_distance3_leg" translatable="false">2</string>
+
+    <string name="arsenal_frenzy_name">Frenzy</string>
+    <string name="arsenal_frenzy_type">Sidearm</string>
+    <string name="arsenal_frenzy_detailname">AMP-11 Frenzy</string>
+    <string name="arsenal_frenzy_cost" translatable="false">400</string>
+    <string name="arsenal_frenzy_magazine_one" translatable="false">13</string>
+    <string name="arsenal_frenzy_magazine_whole" translatable="false">39</string>
+    <string name="arsenal_frenzy_wall_penetration">Low</string>
+    <string name="arsenal_frenzy_primary_mode">Full-Automatic</string>
+    <string name="arsenal_frenzy_primary_firerate" translatable="false">10</string>
+    <string name="arsenal_frenzy_distance1" translatable="false">0~20m</string>
+    <string name="arsenal_frenzy_distance1_head" translatable="false">78</string>
+    <string name="arsenal_frenzy_distance1_body" translatable="false">26</string>
+    <string name="arsenal_frenzy_distance1_leg" translatable="false">22</string>
+    <string name="arsenal_frenzy_distance2" translatable="false">20~50m</string>
+    <string name="arsenal_frenzy_distance2_head" translatable="false">63</string>
+    <string name="arsenal_frenzy_distance2_body" translatable="false">21</string>
+    <string name="arsenal_frenzy_distance2_leg" translatable="false">17</string>
+
+    <string name="arsenal_ghost_name">Ghost</string>
+    <string name="arsenal_ghost_type">Sidearm</string>
+    <string name="arsenal_ghost_detailname">LP-15 Ghost</string>
+    <string name="arsenal_ghost_cost" translatable="false">500</string>
+    <string name="arsenal_ghost_magazine_one" translatable="false">15</string>
+    <string name="arsenal_ghost_magazine_whole" translatable="false">45</string>
+    <string name="arsenal_ghost_wall_penetration">Medium</string>
+    <string name="arsenal_ghost_primary_mode">Semi-Automatic</string>
+    <string name="arsenal_ghost_primary_firerate" translatable="false">6.75</string>
+    <string name="arsenal_ghost_distance1" translatable="false">0~30m</string>
+    <string name="arsenal_ghost_distance1_head" translatable="false">105</string>
+    <string name="arsenal_ghost_distance1_body" translatable="false">30</string>
+    <string name="arsenal_ghost_distance1_leg" translatable="false">26</string>
+    <string name="arsenal_ghost_distance2" translatable="false">30~50m</string>
+    <string name="arsenal_ghost_distance2_head" translatable="false">88</string>
+    <string name="arsenal_ghost_distance2_body" translatable="false">25</string>
+    <string name="arsenal_ghost_distance2_leg" translatable="false">21</string>
+
+    <string name="arsenal_sheriff_name">Sheriff</string>
+    <string name="arsenal_sheriff_type">Sidearm</string>
+    <string name="arsenal_sheriff_detailname">SAR-6 Sheriff</string>
+    <string name="arsenal_sheriff_cost" translatable="false">800</string>
+    <string name="arsenal_sheriff_magazine_one" translatable="false">6</string>
+    <string name="arsenal_sheriff_magazine_whole" translatable="false">24</string>
+    <string name="arsenal_sheriff_wall_penetration">High</string>
+    <string name="arsenal_sheriff_primary_mode">Semi-Automatic</string>
+    <string name="arsenal_sheriff_primary_firerate" translatable="false">4</string>
+    <string name="arsenal_sheriff_distance1" translatable="false">0~30m</string>
+    <string name="arsenal_sheriff_distance1_head" translatable="false">160</string>
+    <string name="arsenal_sheriff_distance1_body" translatable="false">55</string>
+    <string name="arsenal_sheriff_distance1_leg" translatable="false">47</string>
+    <string name="arsenal_sheriff_distance2" translatable="false">30~50m</string>
+    <string name="arsenal_sheriff_distance2_head" translatable="false">145</string>
+    <string name="arsenal_sheriff_distance2_body" translatable="false">50</string>
+    <string name="arsenal_sheriff_distance2_leg" translatable="false">43</string>
+
+    <string name="arsenal_stinger_name">Stinger</string>
+    <string name="arsenal_stinger_type">SMG</string>
+    <string name="arsenal_stinger_detailname">CQ-SBR Stinger</string>
+    <string name="arsenal_stinger_cost" translatable="false">1000</string>
+    <string name="arsenal_stinger_magazine_one" translatable="false">20</string>
+    <string name="arsenal_stinger_magazine_whole" translatable="false">60</string>
+    <string name="arsenal_stinger_wall_penetration">Low</string>
+    <string name="arsenal_stinger_primary_mode">Full-Automatic</string>
+    <string name="arsenal_stinger_primary_firerate" translatable="false">18</string>
+    <string name="arsenal_stinger_alternate_description">1.15x, 4-round burst, spread reduction</string>
+    <string name="arsenal_stinger_alternate_firerate" translatable="false">8</string>
+    <string name="arsenal_stinger_distance1" translatable="false">0~30m</string>
+    <string name="arsenal_stinger_distance1_head" translatable="false">67</string>
+    <string name="arsenal_stinger_distance1_body" translatable="false">27</string>
+    <string name="arsenal_stinger_distance1_leg" translatable="false">23</string>
+    <string name="arsenal_stinger_distance2" translatable="false">30~50m</string>
+    <string name="arsenal_stinger_distance2_head" translatable="false">62</string>
+    <string name="arsenal_stinger_distance2_body" translatable="false">25</string>
+    <string name="arsenal_stinger_distance2_leg" translatable="false">21</string>
+
+    <string name="arsenal_spectre_name">Spectre</string>
+    <string name="arsenal_spectre_type">SMG</string>
+    <string name="arsenal_spectre_detailname">SMG-9 Spectre</string>
+    <string name="arsenal_spectre_cost" translatable="false">1600</string>
+    <string name="arsenal_spectre_magazine_one" translatable="false">30</string>
+    <string name="arsenal_spectre_magazine_whole" translatable="false">90</string>
+    <string name="arsenal_spectre_wall_penetration">Low</string>
+    <string name="arsenal_spectre_primary_mode">Full-Automatic</string>
+    <string name="arsenal_spectre_primary_firerate" translatable="false">13.33</string>
+    <string name="arsenal_spectre_alternate_description">1.15x, Full-Automatic, spread reduction</string>
+    <string name="arsenal_spectre_alternate_firerate" translatable="false">12</string>
+    <string name="arsenal_spectre_distance1" translatable="false">0~20m</string>
+    <string name="arsenal_spectre_distance1_head" translatable="false">78</string>
+    <string name="arsenal_spectre_distance1_body" translatable="false">26</string>
+    <string name="arsenal_spectre_distance1_leg" translatable="false">22</string>
+    <string name="arsenal_spectre_distance2" translatable="false">20~50m</string>
+    <string name="arsenal_spectre_distance2_head" translatable="false">66</string>
+    <string name="arsenal_spectre_distance2_body" translatable="false">22</string>
+    <string name="arsenal_spectre_distance2_leg" translatable="false">18</string>
+
+    <string name="arsenal_bucky_name">Bucky</string>
+    <string name="arsenal_bucky_type">Shotgun</string>
+    <string name="arsenal_bucky_detailname">PA-12 Bucky</string>
+    <string name="arsenal_bucky_cost" translatable="false">900</string>
+    <string name="arsenal_bucky_magazine_one" translatable="false">5</string>
+    <string name="arsenal_bucky_magazine_whole" translatable="false">10</string>
+    <string name="arsenal_bucky_wall_penetration">Low</string>
+    <string name="arsenal_bucky_primary_mode">Semi-Automatic(15shots)</string>
+    <string name="arsenal_bucky_primary_firerate" translatable="false">1.1</string>
+    <string name="arsenal_bucky_alternate_description">Semi-Automatic Air Burst(extended primary fire shot)</string>
+    <string name="arsenal_bucky_alternate_firerate" translatable="false">1.1</string>
+    <string name="arsenal_bucky_distance1" translatable="false">0~8m</string>
+    <string name="arsenal_bucky_distance1_head" translatable="false">44</string>
+    <string name="arsenal_bucky_distance1_body" translatable="false">22</string>
+    <string name="arsenal_bucky_distance1_leg" translatable="false">19</string>
+    <string name="arsenal_bucky_distance2" translatable="false">8~12m</string>
+    <string name="arsenal_bucky_distance2_head" translatable="false">34</string>
+    <string name="arsenal_bucky_distance2_body" translatable="false">17</string>
+    <string name="arsenal_bucky_distance2_leg" translatable="false">14</string>
+    <string name="arsenal_bucky_distance3" translatable="false">12~50m</string>
+    <string name="arsenal_bucky_distance3_head" translatable="false">18</string>
+    <string name="arsenal_bucky_distance3_body" translatable="false">9</string>
+    <string name="arsenal_bucky_distance3_leg" translatable="false">8</string>
+
+    <string name="arsenal_judge_name">Judge</string>
+    <string name="arsenal_judge_type">Shotgun</string>
+    <string name="arsenal_judge_detailname">ACS-12 Judge</string>
+    <string name="arsenal_judge_cost" translatable="false">1500</string>
+    <string name="arsenal_judge_magazine_one" translatable="false">7</string>
+    <string name="arsenal_judge_magazine_whole" translatable="false">21</string>
+    <string name="arsenal_judge_wall_penetration">Medium</string>
+    <string name="arsenal_judge_primary_mode">Full-Automatic(12shots)</string>
+    <string name="arsenal_judge_primary_firerate" translatable="false">3.5</string>
+    <string name="arsenal_judge_distance1" translatable="false">0~8m</string>
+    <string name="arsenal_judge_distance1_head" translatable="false">34</string>
+    <string name="arsenal_judge_distance1_body" translatable="false">17</string>
+    <string name="arsenal_judge_distance1_leg" translatable="false">14</string>
+    <string name="arsenal_judge_distance2" translatable="false">8~12m</string>
+    <string name="arsenal_judge_distance2_head" translatable="false">26</string>
+    <string name="arsenal_judge_distance2_body" translatable="false">13</string>
+    <string name="arsenal_judge_distance2_leg" translatable="false">11</string>
+    <string name="arsenal_judge_distance3" translatable="false">12~50m</string>
+    <string name="arsenal_judge_distance3_head" translatable="false">20</string>
+    <string name="arsenal_judge_distance3_body" translatable="false">10</string>
+    <string name="arsenal_judge_distance3_leg" translatable="false">9</string>
+
+    <string name="arsenal_bulldog_name">Bulldog</string>
+    <string name="arsenal_bulldog_type">Rifle</string>
+    <string name="arsenal_bulldog_detailname">3X-PDR Bulldog</string>
+    <string name="arsenal_bulldog_cost" translatable="false">2100</string>
+    <string name="arsenal_bulldog_magazine_one" translatable="false">24</string>
+    <string name="arsenal_bulldog_magazine_whole" translatable="false">72</string>
+    <string name="arsenal_bulldog_wall_penetration">Medium</string>
+    <string name="arsenal_bulldog_primary_mode">Full-Automatic</string>
+    <string name="arsenal_bulldog_primary_firerate" translatable="false">9.15</string>
+    <string name="arsenal_bulldog_alternate_description">1.25x, 3-round burst</string>
+    <string name="arsenal_bulldog_alternate_firerate" translatable="false">4</string>
+    <string name="arsenal_bulldog_distance1" translatable="false">0~50m</string>
+    <string name="arsenal_bulldog_distance1_head" translatable="false">116</string>
+    <string name="arsenal_bulldog_distance1_body" translatable="false">35</string>
+    <string name="arsenal_bulldog_distance1_leg" translatable="false">30</string>
+
+    <string name="arsenal_guardian_name">Guardian</string>
+    <string name="arsenal_guardian_type">Rifle</string>
+    <string name="arsenal_guardian_detailname">DMR-04 guardian</string>
+    <string name="arsenal_guardian_cost" translatable="false">2700</string>
+    <string name="arsenal_guardian_magazine_one" translatable="false">12</string>
+    <string name="arsenal_guardian_magazine_whole" translatable="false">36</string>
+    <string name="arsenal_guardian_wall_penetration">Medium</string>
+    <string name="arsenal_guardian_primary_mode">Semi-Automatic</string>
+    <string name="arsenal_guardian_primary_firerate" translatable="false">6.5</string>
+    <string name="arsenal_guardian_alternate_description">1,5x, Semi-Automatic, spread reduction</string>
+    <string name="arsenal_guardian_alternate_firerate" translatable="false">6.5</string>
+    <string name="arsenal_guardian_distance1" translatable="false">0~50m</string>
+    <string name="arsenal_guardian_distance1_head" translatable="false">195</string>
+    <string name="arsenal_guardian_distance1_body" translatable="false">65</string>
+    <string name="arsenal_guardian_distance1_leg" translatable="false">49</string>
+
+    <string name="arsenal_vandal_name">Vandal</string>
+    <string name="arsenal_vandal_type">Rifle</string>
+    <string name="arsenal_vandal_detailname">AR-762 Vandal</string>
+    <string name="arsenal_vandal_cost" translatable="false">2900</string>
+    <string name="arsenal_vandal_magazine_one" translatable="false">25</string>
+    <string name="arsenal_vandal_magazine_whole" translatable="false">75</string>
+    <string name="arsenal_vandal_wall_penetration">Medium</string>
+    <string name="arsenal_vandal_primary_mode">Full-Automatic</string>
+    <string name="arsenal_vandal_primary_firerate" translatable="false">9.25</string>
+    <string name="arsenal_vandal_alternate_description">1.25x, Full-Automatic, spread reduction</string>
+    <string name="arsenal_vandal_alternate_firerate" translatable="false">8.32</string>
+    <string name="arsenal_vandal_distance1" translatable="false">0~50m</string>
+    <string name="arsenal_vandal_distance1_head" translatable="false">156</string>
+    <string name="arsenal_vandal_distance1_body" translatable="false">39</string>
+    <string name="arsenal_vandal_distance1_leg" translatable="false">33</string>
+
+    <string name="arsenal_phantom_name">Phantom</string>
+    <string name="arsenal_phantom_type">Rifle</string>
+    <string name="arsenal_phantom_detailname">SW-ACR Phantom</string>
+    <string name="arsenal_phantom_cost" translatable="false">2900</string>
+    <string name="arsenal_phantom_magazine_one" translatable="false">30</string>
+    <string name="arsenal_phantom_magazine_whole" translatable="false">90</string>
+    <string name="arsenal_phantom_wall_penetration">Medium</string>
+    <string name="arsenal_phantom_primary_mode">Full-Automatic</string>
+    <string name="arsenal_phantom_primary_firerate" translatable="false">11</string>
+    <string name="arsenal_phantom_distance1" translatable="false">0~15m</string>
+    <string name="arsenal_phantom_distance1_head" translatable="false">156</string>
+    <string name="arsenal_phantom_distance1_body" translatable="false">39</string>
+    <string name="arsenal_phantom_distance1_leg" translatable="false">33</string>
+    <string name="arsenal_phantom_distance2" translatable="false">15~30m</string>
+    <string name="arsenal_phantom_distance2_head" translatable="false">140</string>
+    <string name="arsenal_phantom_distance2_body" translatable="false">35</string>
+    <string name="arsenal_phantom_distance2_leg" translatable="false">30</string>
+    <string name="arsenal_phantom_distance3" translatable="false">30~50m</string>
+    <string name="arsenal_phantom_distance3_head" translatable="false">124</string>
+    <string name="arsenal_phantom_distance3_body" translatable="false">31</string>
+    <string name="arsenal_phantom_distance3_leg" translatable="false">26</string>
+
+    <string name="arsenal_marshal_name">Marshal</string>
+    <string name="arsenal_marshal_type">Sniper</string>
+    <string name="arsenal_marshal_detailname">LAR-1887 Marshal</string>
+    <string name="arsenal_marshal_cost" translatable="false">1100</string>
+    <string name="arsenal_marshal_magazine_one" translatable="false">5</string>
+    <string name="arsenal_marshal_magazine_whole" translatable="false">15</string>
+    <string name="arsenal_marshal_wall_penetration">Medium</string>
+    <string name="arsenal_marshal_primary_mode">Semi-Automatic</string>
+    <string name="arsenal_marshal_primary_firerate" translatable="false">1.5</string>
+    <string name="arsenal_marshal_alternate_description">2.5x, Semi-Automatic, spread reduction</string>
+    <string name="arsenal_marshal_alternate_firerate" translatable="false">1.2</string>
+    <string name="arsenal_marshal_distance1" translatable="false">0~50m</string>
+    <string name="arsenal_marshal_distance1_head" translatable="false">202</string>
+    <string name="arsenal_marshal_distance1_body" translatable="false">101</string>
+    <string name="arsenal_marshal_distance1_leg" translatable="false">85</string>
+
+    <string name="arsenal_operator_name">Operator</string>
+    <string name="arsenal_operator_type">Sniper</string>
+    <string name="arsenal_operator_detailname">BSW-460 Operator</string>
+    <string name="arsenal_operator_cost" translatable="false">4500</string>
+    <string name="arsenal_operator_magazine_one" translatable="false">5</string>
+    <string name="arsenal_operator_magazine_whole" translatable="false">10</string>
+    <string name="arsenal_operator_wall_penetration">High</string>
+    <string name="arsenal_operator_primary_mode">Semi-Automatic</string>
+    <string name="arsenal_operator_primary_firerate" translatable="false">0.75</string>
+    <string name="arsenal_operator_alternate_description">2.5x, 5x, Semi-Automatic, significant spread reduction</string>
+    <string name="arsenal_operator_alternate_firerate" translatable="false">0.75</string>
+    <string name="arsenal_operator_distance1" translatable="false">0~50m</string>
+    <string name="arsenal_operator_distance1_head" translatable="false">255</string>
+    <string name="arsenal_operator_distance1_body" translatable="false">150</string>
+    <string name="arsenal_operator_distance1_leg" translatable="false">127</string>
+
+    <string name="arsenal_ares_name">Ares</string>
+    <string name="arsenal_ares_type">Heavy</string>
+    <string name="arsenal_ares_detailname">LSW-RF Ares</string>
+    <string name="arsenal_ares_cost" translatable="false">1600</string>
+    <string name="arsenal_ares_magazine_one" translatable="false">50</string>
+    <string name="arsenal_ares_magazine_whole" translatable="false">100</string>
+    <string name="arsenal_ares_wall_penetration">High</string>
+    <string name="arsenal_ares_primary_mode">Full-Automatic(fire rate increases max 13 during fire)</string>
+    <string name="arsenal_ares_primary_firerate" translatable="false">10</string>
+    <string name="arsenal_ares_alternate_description">1.25x, Full-Automatic(fire rate increases max 13 during fire), spread reduction</string>
+    <string name="arsenal_ares_alternate_firerate" translatable="false">10</string>
+    <string name="arsenal_ares_distance1" translatable="false">0~30m</string>
+    <string name="arsenal_ares_distance1_head" translatable="false">72</string>
+    <string name="arsenal_ares_distance1_body" translatable="false">30</string>
+    <string name="arsenal_ares_distance1_leg" translatable="false">25</string>
+    <string name="arsenal_ares_distance2" translatable="false">30~50m</string>
+    <string name="arsenal_ares_distance2_head" translatable="false">67</string>
+    <string name="arsenal_ares_distance2_body" translatable="false">28</string>
+    <string name="arsenal_ares_distance2_leg" translatable="false">23</string>
+
+    <string name="arsenal_odin_name">Odin</string>
+    <string name="arsenal_odin_type">Heavy</string>
+    <string name="arsenal_odin_detailname">HMG-50 Odin</string>
+    <string name="arsenal_odin_cost" translatable="false">3200</string>
+    <string name="arsenal_odin_magazine_one" translatable="false">100</string>
+    <string name="arsenal_odin_magazine_whole" translatable="false">200</string>
+    <string name="arsenal_odin_wall_penetration">High</string>
+    <string name="arsenal_odin_primary_mode">Full-Automatic(fire rate increases max 15.6 during fire)</string>
+    <string name="arsenal_odin_primary_firerate" translatable="false">12</string>
+    <string name="arsenal_odin_alternate_description">1.25x, Full-Automatic, spread reduction</string>
+    <string name="arsenal_odin_alternate_firerate" translatable="false">15.6</string>
+    <string name="arsenal_odin_distance1" translatable="false">0~30m</string>
+    <string name="arsenal_odin_distance1_head" translatable="false">95</string>
+    <string name="arsenal_odin_distance1_body" translatable="false">38</string>
+    <string name="arsenal_odin_distance1_leg" translatable="false">32</string>
+    <string name="arsenal_odin_distance2" translatable="false">30~50m</string>
+    <string name="arsenal_odin_distance2_head" translatable="false">77</string>
+    <string name="arsenal_odin_distance2_body" translatable="false">31</string>
+    <string name="arsenal_odin_distance2_leg" translatable="false">26</string>
+    <string name="thankyou">Rear alternate attack will send the enemy to heaven.</string>
+
+    <string name="map_ascent">Ascent</string>
+    <string name="map_bind">Bind</string>
+    <string name="map_heaven">Heaven</string>
+    <string name="map_split">Split</string>
 </resources>

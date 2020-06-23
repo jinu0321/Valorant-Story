@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FF1493</color>
-    <color name="colorPrimaryDark">#FF1493</color>
-    <color name="colorAccent">#FF1493</color>
-    <color name="colorDeepPink">#FF1493</color>
+    <color name="colorPrimary">#00897B</color>
+    <color name="colorPrimaryDark">#00897B</color>
+    <color name="colorAccent">#00897B</color>
+    <color name="colorGreen">#43A047</color>
     <color name="colorBlack">#000000</color>
+    <color name="backgroundAgent">#00897B</color>
+    <color name="backgroundArsenal">#7C46EA</color>
+    <color name="backgroundMap">#F19E36</color>
+    <color name="colorWhite">#FFFFFF</color>
 </resources>
