@@ -23,21 +23,18 @@ class MainActivity : AppCompatActivity() {
         MainTabAgent.setOnClickListener {
             ViewManager.highlightSelectedTab(it as TextView, MainTabArsenal, MainTabMap, "#00897B")
             MainBackgroundConstraintLayout.background = getDrawable(R.drawable.background_main_agent)
-            StatusBarManager.changeStausBarColor(this, R.color.backgroundAgent)
             FragmentManager.replaceFragmentInContainer(R.id.MainContentsFragmentContainer, AgentContentsFragment(), this)
             MainContentsFragmentContainer.setBackgroundResource(R.drawable.background_main_agent)
         }
         MainTabArsenal.setOnClickListener {
             ViewManager.highlightSelectedTab(it as TextView, MainTabAgent, MainTabMap, "#7C46EA")
             MainBackgroundConstraintLayout.background = getDrawable(R.drawable.background_main_arsenal)
-            StatusBarManager.changeStausBarColor(this, R.color.backgroundArsenal)
             FragmentManager.replaceFragmentInContainer(R.id.MainContentsFragmentContainer, ArsenalContentsFragment(), this)
             MainContentsFragmentContainer.setBackgroundResource(R.drawable.background_main_arsenal)
         }
         MainTabMap.setOnClickListener {
             ViewManager.highlightSelectedTab(it as TextView, MainTabArsenal, MainTabAgent, "#F19E36")
             MainBackgroundConstraintLayout.background = getDrawable(R.drawable.background_main_map)
-            StatusBarManager.changeStausBarColor(this, R.color.backgroundMap)
             FragmentManager.replaceFragmentInContainer(R.id.MainContentsFragmentContainer, MapContentsFragment(), this)
             MainContentsFragmentContainer.setBackgroundResource(R.drawable.background_main_map)
         }

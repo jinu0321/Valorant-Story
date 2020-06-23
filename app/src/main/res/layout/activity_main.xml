@@ -12,8 +12,6 @@
         android:id="@+id/MainTabSelectLayout"
         android:layout_width="0dp"
         android:layout_height="80dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,9 +22,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/background_tabselector"
+            android:background="@drawable/background_tab_agent"
             android:fontFamily="@font/jsdkregular"
             android:gravity="center"
+            android:lines="1"
             android:padding="20dp"
             android:text="@string/main_tab_agents"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -40,9 +39,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/background_tabselector"
+            android:background="@drawable/background_tab_unselected"
             android:fontFamily="@font/jsdkregular"
             android:gravity="center"
+            android:lines="1"
             android:padding="20dp"
             android:text="@string/main_tab_weapons"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -56,9 +56,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/background_tabselector"
+            android:background="@drawable/background_tab_unselected"
             android:fontFamily="@font/jsdkregular"
             android:gravity="center"
+            android:lines="1"
             android:padding="20dp"
             android:text="@string/main_tab_maps"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -74,8 +75,25 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:padding="3dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/MainTemporaryAdBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MainTabSelectLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/MainTabSelectLayout">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/MainTemporaryAdBox"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/background_ad_box"
+        android:fontFamily="@font/font_jsdkregularfont"
+        android:gravity="center"
+        android:text="Ad Box"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

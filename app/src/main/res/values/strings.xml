@@ -4,6 +4,7 @@
 
     <string name="color_deep_pink" translatable="false">#FF1493</string>
     <string name="color_white" translatable="false">#FFFFFF</string>
+    <string name="color_gray" translatable="false">#979797</string>
 
     <string name="cred">creds</string>
     <string name="sec">sec</string>

@@ -390,6 +390,11 @@ class Agent(val identifier: String) {
                 skill3Image = R.drawable.viper_3_toxicscreen
                 skill4Image = R.drawable.viper_4_viperspit
             }
+
+            "questionmark" -> {
+                name = "coming soon..."
+                iconImageAddress = R.drawable.question_mark
+            }
         }
     }
 }

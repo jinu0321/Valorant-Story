@@ -25,9 +25,8 @@ class MapContentsFragment: Fragment() {
             Map("heaven"),
             Map("split"))
         with(view.MapContentsFragmentRecyclerView) {
-            adapter = MapCardRecyclerViewAdapter(maps)
+            adapter = MapCardRecyclerViewAdapter(maps, this@MapContentsFragment)
             layoutManager = LinearLayoutManager(activity)
-            addItemDecoration(RecyclerViewDecoration(3, 3))
         }
         return view
     }

@@ -1,8 +1,11 @@
 package com.jincal.valorantstory
 
+import android.graphics.Color
+import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.TextView
 import com.jincal.valorantstory.`object`.StatusBarManager
 import com.jincal.valorantstory.arsenal.Arsenal
 import kotlinx.android.synthetic.main.activity_arsenal_detail.*
@@ -47,20 +50,29 @@ class ArsenalDetailActivity : AppCompatActivity() {
         }
 
         // set lower constraint layout
+        fun setDamageText(textView: TextView, damage: String) {
+            if (damage != ""){
+                if (damage.toInt() >= 150) {
+                    textView.setTextColor(Color.RED)
+                    textView.setTypeface(null, Typeface.BOLD)
+                }
+                textView.text = damage
+            }
+        }
         ArsenalDetailDistance2Layout.visibility = View.VISIBLE
         ArsenalDetailDistance3Layout.visibility = View.VISIBLE
         ArsenalDetailDistance1DistanceTextView.text = arsenal.distance1
-        ArsenalDetailDistance1HeadTextView.text = arsenal.distance1Head
-        ArsenalDetailDistance1BodyTextView.text = arsenal.distance1Body
-        ArsenalDetailDistance1LegTextView.text = arsenal.distance1Leg
+        setDamageText(ArsenalDetailDistance1HeadTextView, arsenal.distance1Head)
+        setDamageText(ArsenalDetailDistance1BodyTextView, arsenal.distance1Body)
+        setDamageText(ArsenalDetailDistance1LegTextView, arsenal.distance1Leg)
         ArsenalDetailDistance2DistanceTextView.text = arsenal.distance2
-        ArsenalDetailDistance2HeadTextView.text = arsenal.distance2Head
-        ArsenalDetailDistance2BodyTextView.text = arsenal.distance2Body
-        ArsenalDetailDistance2LegTextView.text = arsenal.distance2Leg
+        setDamageText(ArsenalDetailDistance2HeadTextView, arsenal.distance2Head)
+        setDamageText(ArsenalDetailDistance2BodyTextView, arsenal.distance2Body)
+        setDamageText(ArsenalDetailDistance2LegTextView, arsenal.distance2Leg)
         ArsenalDetailDistance3DistanceTextView.text = arsenal.distance3
-        ArsenalDetailDistance3HeadTextView.text = arsenal.distance3Head
-        ArsenalDetailDistance3BodyTextView.text = arsenal.distance3Body
-        ArsenalDetailDistance3LegTextView.text = arsenal.distance3Leg
+        setDamageText(ArsenalDetailDistance3HeadTextView, arsenal.distance3Head)
+        setDamageText(ArsenalDetailDistance3BodyTextView, arsenal.distance3Body)
+        setDamageText(ArsenalDetailDistance3LegTextView, arsenal.distance3Leg)
         if (arsenal.distance2 == "") ArsenalDetailDistance2Layout.visibility = View.GONE
         if (arsenal.distance3 == "") ArsenalDetailDistance3Layout.visibility = View.GONE
         if (arsenal.identifier == "tacticalknife") {

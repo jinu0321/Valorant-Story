@@ -8,6 +8,7 @@ import androidx.databinding.BindingAdapter
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.jincal.valorantstory.`object`.ScreenSizeHolder
+import com.jincal.valorantstory.`object`.StatusBarManager
 import com.jincal.valorantstory.agent.Agent
 import com.jincal.valorantstory.agent.agentcard.RecyclerViewDecoration
 import com.jincal.valorantstory.agent.agentskill.AgentSkillRecyclerViewAdapter
@@ -18,6 +19,7 @@ class AgentDetailActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        StatusBarManager.changeStausBarColor(this, R.color.backgroundAgent)
         var binding: ActivityAgentDetailBinding = DataBindingUtil.setContentView(this, R.layout.activity_agent_detail)
         val agent = Agent(intent.getStringExtra("identifier")!!)
         binding.agent = agent

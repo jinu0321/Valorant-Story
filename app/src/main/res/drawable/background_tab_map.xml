@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-<solid
-    />
-<stroke
-    android:width="3dp"
-    android:color="@color/backgroundMap" />
-<gradient
-    android:startColor="#443B55"
-    android:endColor="#202753"
-    android:angle="45"/>
-</shape>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetBottom="-4dp">
+
+    <shape android:shape="rectangle">
+        <stroke
+            android:width="4dp"
+            android:color="@color/backgroundMap"/>
+        <solid
+            android:color="@color/backgroundMap"/>
+        <padding
+            android:bottom="20dp"
+            android:top="20dp"
+            android:left="20dp"
+            android:right="20dp"/>
+    </shape>
+
+</inset>
