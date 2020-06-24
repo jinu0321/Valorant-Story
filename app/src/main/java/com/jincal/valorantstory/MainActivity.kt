@@ -6,6 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.InterstitialAd
 import com.google.android.gms.ads.MobileAds
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.ktx.Firebase
 import com.jincal.valorantstory.`object`.*
 import com.jincal.valorantstory.fragment.AgentContentsFragment
 import com.jincal.valorantstory.fragment.MapContentsFragment
@@ -15,13 +18,14 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     private var adView: AdView? = null
-
+    private lateinit var firebaseAnalytics: FirebaseAnalytics
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         adView = MainAdView
         AdManager.setAd(adView!!)
+        firebaseAnalytics = Firebase.analytics
         ScreenSizeHolder.getPixelInfo(this)
         ViewManager.setHeightOf(MainTabSelectLayout, ScreenSizeHolder.screenHeight/8)
 

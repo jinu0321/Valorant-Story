@@ -1,0 +1,41 @@
+{
+  "project_info": {
+    "project_number": "733710705794",
+    "firebase_url": "https://valorant-story.firebaseio.com",
+    "project_id": "valorant-story",
+    "storage_bucket": "valorant-story.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733710705794:android:3ec4a6e459cfa4d934409b",
+        "android_client_info": {
+          "package_name": "com.jincal.valorantstory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733710705794-46kt6ifmso9kae6uvn25llnhb8ilumar.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1z6PDCgq2IFpDpNUZl33jA5Yf-N2S8lk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733710705794-46kt6ifmso9kae6uvn25llnhb8ilumar.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-5137350238508067~8717736962"
+    }
+  ],
+  "configuration_version": "1"
+}
