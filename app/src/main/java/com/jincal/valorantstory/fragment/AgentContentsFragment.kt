@@ -6,7 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.InterstitialAd
 import com.jincal.valorantstory.R
+import com.jincal.valorantstory.ResourceAccessor
 import com.jincal.valorantstory.agent.Agent
 import com.jincal.valorantstory.agent.agentcard.AgentCardRecyclerViewAdapter
 import com.jincal.valorantstory.agent.agentcard.RecyclerViewDecoration
@@ -33,11 +36,16 @@ class AgentContentsFragment(): Fragment() {
             Agent("questionmark")
         )
         val view = inflater.inflate(R.layout.fragment_contents_agent, container, false)
+        val interstitialAd = InterstitialAd(activity)
+        interstitialAd.adUnitId = ResourceAccessor.res!!.getString(R.string.id_ad_interstitial_test)
+        interstitialAd.loadAd(AdRequest.Builder().build())
+
         view.AgentContentsFragmentRecyclerView.layoutManager = GridLayoutManager(activity, 2)
         view.AgentContentsFragmentRecyclerView.adapter =
             AgentCardRecyclerViewAdapter(
                 agents,
-                this
+                this,
+                interstitialAd
             )
         view.AgentContentsFragmentRecyclerView.addItemDecoration(
             RecyclerViewDecoration(

@@ -8,6 +8,7 @@ import androidx.databinding.BindingAdapter
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.InterstitialAd
 import com.jincal.valorantstory.`object`.AdManager
 import com.jincal.valorantstory.`object`.ScreenSizeHolder
 import com.jincal.valorantstory.`object`.StatusBarManager
@@ -28,6 +29,7 @@ class AgentDetailActivity : AppCompatActivity() {
         val agent = Agent(intent.getStringExtra("identifier")!!)
         binding.agent = agent
         adView = AgentDetailAdView
+        val interstitialAd = InterstitialAd(this)
         AdManager.setAd(adView!!)
 
         AgentDetailStandingImageView.layoutParams.width = ScreenSizeHolder.screenWidth / 2

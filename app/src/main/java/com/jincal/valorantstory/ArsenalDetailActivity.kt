@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.InterstitialAd
 import com.jincal.valorantstory.`object`.AdManager
 import com.jincal.valorantstory.`object`.StatusBarManager
 import com.jincal.valorantstory.arsenal.Arsenal
@@ -20,6 +21,7 @@ class ArsenalDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_arsenal_detail)
         adView = ArsenalDetailAdView
+        val interstitialAd = InterstitialAd(this)
         AdManager.setAd(adView!!)
         StatusBarManager.changeStausBarColor(this, R.color.backgroundArsenal)
 

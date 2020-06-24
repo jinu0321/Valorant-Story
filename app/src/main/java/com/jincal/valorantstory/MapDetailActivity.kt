@@ -3,6 +3,7 @@ package com.jincal.valorantstory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.InterstitialAd
 import com.jincal.valorantstory.`object`.AdManager
 import com.jincal.valorantstory.`object`.StatusBarManager
 import com.jincal.valorantstory.map.Map
@@ -17,6 +18,7 @@ class MapDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_map_detail)
         adView = MapDetailAdView
+        val interstitialAd = InterstitialAd(this)
         AdManager.setAd(adView!!)
         StatusBarManager.changeStausBarColor(this, R.color.backgroundMap)
 

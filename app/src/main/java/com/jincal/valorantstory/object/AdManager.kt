@@ -1,15 +1,23 @@
 package com.jincal.valorantstory.`object`
 
-import android.content.Context
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
-import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.ads.InterstitialAd
 import com.jincal.valorantstory.R
+import com.jincal.valorantstory.ResourceAccessor
 
 object AdManager {
+    var viewCount = 2
+    fun viewed5Pages(): Boolean {
+        if (viewCount >= 5) {
+            viewCount = 0
+            return true
+        } else {
+            return false
+        }
+    }
     fun setAd(adView: AdView) {
-        val adRequest = AdRequest.Builder().build()
-        adView.loadAd(adRequest)
+        adView.loadAd(AdRequest.Builder().build())
     }
     fun onPause(adView: AdView) {
         adView.pause()

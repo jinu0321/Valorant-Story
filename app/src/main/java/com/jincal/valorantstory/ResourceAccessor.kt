@@ -13,6 +13,7 @@ class ResourceAccessor: Application() {
     override fun onCreate() {
         super.onCreate()
         MobileAds.initialize(this)
+
         mInstance = this
         res = resources
     }
