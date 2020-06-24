@@ -1,23 +1,43 @@
 package com.jincal.valorantstory.agent.agentcard
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.gms.ads.AdListener
+import com.google.android.gms.ads.InterstitialAd
 import com.jincal.valorantstory.AgentDetailActivity
 import com.jincal.valorantstory.R
+import com.jincal.valorantstory.`object`.AdManager
 import com.jincal.valorantstory.`object`.ScreenSizeHolder
 import com.jincal.valorantstory.agent.Agent
 import kotlinx.android.synthetic.main.recyclerview_item_agent_card.view.*
 import org.jetbrains.anko.support.v4.startActivity
 
-class AgentCardRecyclerViewAdapter(private val agents: Array<Agent>, val fragment: Fragment) :
+class AgentCardRecyclerViewAdapter(private val agents: Array<Agent>, val fragment: Fragment, val interstitialAd: InterstitialAd) :
     RecyclerView.Adapter<AgentCardRecyclerViewAdapter.AgentViewHolder>() {
     inner class AgentViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         init {
             view.setOnClickListener {
-                if (agents[adapterPosition].identifier != "questionmark") fragment.startActivity<AgentDetailActivity>("identifier" to agents[adapterPosition].identifier)
+                if (AdManager.viewed5Pages() && interstitialAd.isLoaded) {
+                    interstitialAd.show()
+                } else {
+                    Log.d("interstitial", "The interstitial ad wasn't loaded yet.")
+                    AdManager.viewCount ++
+                    if (agents[adapterPosition].identifier != "questionmark") fragment.startActivity<AgentDetailActivity>("identifier" to agents[adapterPosition].identifier)
+                }
+                runAdEvents()
+            }
+        }
+        private fun runAdEvents() {
+            interstitialAd.adListener = object : AdListener() {
+                // If user closes the ad, s/he is directed to DetailActivity.
+                override fun onAdClosed() {
+                    AdManager.viewCount ++
+                    if (agents[adapterPosition].identifier != "questionmark") fragment.startActivity<AgentDetailActivity>("identifier" to agents[adapterPosition].identifier)
+                }
             }
         }
     }
@@ -37,12 +57,19 @@ class AgentCardRecyclerViewAdapter(private val agents: Array<Agent>, val fragmen
     }
 
     override fun onBindViewHolder(holder: AgentViewHolder, position: Int) {
+        holder.view.AgentItemImageView.setImageResource(agents[position].iconImageAddress)
         holder.view.AgentItemImageView.layoutParams.height = ScreenSizeHolder.screenHeight / 9
         holder.view.AgentItemImageView.layoutParams.width = ScreenSizeHolder.screenHeight / 9
-        holder.view.AgentItemImageView.setImageResource(agents[position].iconImageAddress)
-        holder.view.AgentItemNameTextView.text = agents[position].name
-        holder.view.AgentItemRoleImageView.setImageResource(agents[position].roleImageAddress)
-        holder.view.AgentItemRoleImageView.layoutParams.height = ScreenSizeHolder.screenHeight / 22
-        holder.view.AgentItemRoleImageView.layoutParams.width = ScreenSizeHolder.screenHeight / 22
+        if (agents[position].identifier == "questionmark") {
+            holder.view.AgentItemComingSoonTextView.visibility = View.VISIBLE
+            holder.view.AgentItemNameTextView.visibility = View.GONE
+            holder.view.AgentItemRoleImageView.visibility = View.GONE
+        } else {
+
+            holder.view.AgentItemNameTextView.text = agents[position].name
+            holder.view.AgentItemRoleImageView.setImageResource(agents[position].roleImageAddress)
+            holder.view.AgentItemRoleImageView.layoutParams.height = ScreenSizeHolder.screenHeight / 22
+            holder.view.AgentItemRoleImageView.layoutParams.width = ScreenSizeHolder.screenHeight / 22
+        }
     }
 }

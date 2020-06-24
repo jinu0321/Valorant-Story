@@ -2,19 +2,27 @@ package com.jincal.valorantstory
 
 import android.graphics.Color
 import android.graphics.Typeface
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.InterstitialAd
+import com.jincal.valorantstory.`object`.AdManager
 import com.jincal.valorantstory.`object`.StatusBarManager
 import com.jincal.valorantstory.arsenal.Arsenal
 import kotlinx.android.synthetic.main.activity_arsenal_detail.*
-import org.jetbrains.anko.toast
 
 class ArsenalDetailActivity : AppCompatActivity() {
+
+    private var adView: AdView? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_arsenal_detail)
+        adView = ArsenalDetailAdView
+        val interstitialAd = InterstitialAd(this)
+        AdManager.setAd(adView!!)
         StatusBarManager.changeStausBarColor(this, R.color.backgroundArsenal)
 
         // set upper constraint layout
@@ -85,4 +93,20 @@ class ArsenalDetailActivity : AppCompatActivity() {
             ArsenalDetailDistance1LegTextView.visibility = View.GONE
         }
     }
+
+    override fun onResume() {
+        AdManager.onResume(adView!!)
+        super.onResume()
+    }
+
+    override fun onPause() {
+        AdManager.onPause(adView!!)
+        super.onPause()
+    }
+
+    override fun onDestroy() {
+        AdManager.onDestroy(adView!!)
+        super.onDestroy()
+    }
+
 }

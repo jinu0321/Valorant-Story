@@ -2,6 +2,12 @@
     <string name="app_name">Valorant Story</string>
     <string name="language">English</string>
 
+    <string name="id_app" translatable="false">ca-app-pub-5137350238508067~8717736962</string>
+    <string name="id_ad_banner" translatable="false">ca-app-pub-5137350238508067/8689816802</string>
+    <string name="id_ad_banner_test" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="id_ad_interstitial" translatable="false">ca-app-pub-5137350238508067/5932270459</string>
+    <string name="id_ad_interstitial_test" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+
     <string name="color_deep_pink" translatable="false">#FF1493</string>
     <string name="color_white" translatable="false">#FFFFFF</string>
     <string name="color_gray" translatable="false">#979797</string>

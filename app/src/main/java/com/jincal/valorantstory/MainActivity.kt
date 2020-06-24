@@ -3,10 +3,10 @@ package com.jincal.valorantstory
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.jincal.valorantstory.`object`.FragmentManager
-import com.jincal.valorantstory.`object`.ScreenSizeHolder
-import com.jincal.valorantstory.`object`.StatusBarManager
-import com.jincal.valorantstory.`object`.ViewManager
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.InterstitialAd
+import com.google.android.gms.ads.MobileAds
+import com.jincal.valorantstory.`object`.*
 import com.jincal.valorantstory.fragment.AgentContentsFragment
 import com.jincal.valorantstory.fragment.MapContentsFragment
 import com.jincal.valorantstory.fragment.ArsenalContentsFragment
@@ -14,9 +14,14 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    private var adView: AdView? = null
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        adView = MainAdView
+        AdManager.setAd(adView!!)
         ScreenSizeHolder.getPixelInfo(this)
         ViewManager.setHeightOf(MainTabSelectLayout, ScreenSizeHolder.screenHeight/8)
 
@@ -43,4 +48,20 @@ class MainActivity : AppCompatActivity() {
         FragmentManager.replaceFragmentInContainer(R.id.MainContentsFragmentContainer, AgentContentsFragment(), this)
         MainContentsFragmentContainer.setBackgroundResource(R.drawable.background_main_agent)
     }
+
+    override fun onResume() {
+        AdManager.onResume(adView!!)
+        super.onResume()
+    }
+
+    override fun onPause() {
+        AdManager.onPause(adView!!)
+        super.onPause()
+    }
+
+    override fun onDestroy() {
+        AdManager.onDestroy(adView!!)
+        super.onDestroy()
+    }
+
 }

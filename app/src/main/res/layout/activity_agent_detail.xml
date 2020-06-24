@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
     <data>
@@ -15,7 +17,7 @@
         tools:context=".AgentDetailActivity">
 
         <ImageView
-            android:id="@+id/AgentInfoStandingImageView"
+            android:id="@+id/AgentDetailStandingImageView"
             android:layout_width="190dp"
             android:layout_height="350dp"
             android:layout_marginStart="8dp"
@@ -29,7 +31,7 @@
             tools:srcCompat="@drawable/breach" />
 
         <TextView
-            android:id="@+id/AgentInfoNameTextView"
+            android:id="@+id/AgentDetailNameTextView"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_marginTop="24dp"
@@ -42,12 +44,12 @@
             android:textColor="#FFFFFF"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/AgentInfoStandingImageView"
+            app:layout_constraintStart_toEndOf="@+id/AgentDetailStandingImageView"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="@string/agent_breach_name" />
 
         <TextView
-            android:id="@+id/AgentInfoRoleTextView"
+            android:id="@+id/AgentDetailRoleTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -59,23 +61,23 @@
             android:text="@{agent.role}"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF"
-            app:layout_constraintBottom_toBottomOf="@+id/AgentInfoRoleImageView"
+            app:layout_constraintBottom_toBottomOf="@+id/AgentDetailRoleImageView"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/AgentInfoRoleImageView"
-            app:layout_constraintTop_toBottomOf="@+id/AgentInfoNameTextView"
+            app:layout_constraintStart_toEndOf="@+id/AgentDetailRoleImageView"
+            app:layout_constraintTop_toBottomOf="@+id/AgentDetailNameTextView"
             tools:text="Controller" />
 
         <ImageView
-            android:id="@+id/AgentInfoRoleImageView"
+            android:id="@+id/AgentDetailRoleImageView"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            app:layout_constraintStart_toEndOf="@+id/AgentInfoStandingImageView"
-            app:layout_constraintTop_toBottomOf="@+id/AgentInfoNameTextView"
+            app:layout_constraintStart_toEndOf="@+id/AgentDetailStandingImageView"
+            app:layout_constraintTop_toBottomOf="@+id/AgentDetailNameTextView"
             app:srcCompat="@{agent.roleImageAddress}"
             tools:srcCompat="@drawable/role_duelist" />
 
         <TextView
-            android:id="@+id/AgentInfoCommentTextView"
+            android:id="@+id/AgentDetailCommentTextView"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_marginTop="2dp"
@@ -86,12 +88,12 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/AgentInfoStandingImageView"
-            app:layout_constraintTop_toBottomOf="@+id/AgentInfoRoleImageView"
+            app:layout_constraintStart_toEndOf="@+id/AgentDetailStandingImageView"
+            app:layout_constraintTop_toBottomOf="@+id/AgentDetailRoleImageView"
             tools:text="@string/agent_breach_comment" />
 
         <TextView
-            android:id="@+id/AgentInfoBiographyTextView"
+            android:id="@+id/AgentDetailBiographyTextView"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="8dp"
@@ -102,23 +104,33 @@
             android:text="@{agent.biography}"
             android:textColor="#FFFFFF"
             android:textSize="15sp"
-            app:layout_constraintBottom_toBottomOf="@+id/AgentInfoStandingImageView"
+            app:layout_constraintBottom_toBottomOf="@+id/AgentDetailStandingImageView"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/AgentInfoStandingImageView"
-            app:layout_constraintTop_toBottomOf="@+id/AgentInfoCommentTextView"
+            app:layout_constraintStart_toEndOf="@+id/AgentDetailStandingImageView"
+            app:layout_constraintTop_toBottomOf="@+id/AgentDetailCommentTextView"
             tools:text="@string/agent_breach_biography" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/AgentInfoSkillsRecyclerView"
+            android:id="@+id/AgentDetailSkillsRecyclerView"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/AgentDetailAdView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AgentDetailStandingImageView" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/AgentDetailAdView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/AgentInfoStandingImageView" />
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/id_ad_banner_test"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

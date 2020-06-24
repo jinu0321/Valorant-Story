@@ -7,7 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.InterstitialAd
 import com.jincal.valorantstory.R
+import com.jincal.valorantstory.ResourceAccessor
 import com.jincal.valorantstory.agent.agentcard.RecyclerViewDecoration
 import com.jincal.valorantstory.arsenal.Arsenal
 import com.jincal.valorantstory.arsenal.arsenalcard.ArsenalCardRecyclerViewAdapter
@@ -21,6 +24,9 @@ class ArsenalContentsFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_contents_arsenal, container, false)
+        val interstitialAd = InterstitialAd(activity)
+        interstitialAd.adUnitId = ResourceAccessor.res!!.getString(R.string.id_ad_interstitial_test)
+        interstitialAd.loadAd(AdRequest.Builder().build())
         val arsenals = arrayOf(
             Arsenal("tacticalknife", activity as Activity),
             Arsenal("classic", activity as Activity),
@@ -42,7 +48,7 @@ class ArsenalContentsFragment: Fragment() {
             Arsenal("odin", activity as Activity)
         )
         with(view.ArsenalContentsFragmentRecyclerView) {
-            adapter = ArsenalCardRecyclerViewAdapter(arsenals, this@ArsenalContentsFragment)
+            adapter = ArsenalCardRecyclerViewAdapter(arsenals, this@ArsenalContentsFragment, interstitialAd)
             layoutManager = LinearLayoutManager(activity)
             addItemDecoration(RecyclerViewDecoration(3, 3))
         }

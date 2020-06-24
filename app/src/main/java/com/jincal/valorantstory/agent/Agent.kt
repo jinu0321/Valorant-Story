@@ -392,7 +392,6 @@ class Agent(val identifier: String) {
             }
 
             "questionmark" -> {
-                name = "coming soon..."
                 iconImageAddress = R.drawable.question_mark
             }
         }

@@ -7,6 +7,9 @@ import android.widget.ImageView
 import androidx.databinding.BindingAdapter
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.InterstitialAd
+import com.jincal.valorantstory.`object`.AdManager
 import com.jincal.valorantstory.`object`.ScreenSizeHolder
 import com.jincal.valorantstory.`object`.StatusBarManager
 import com.jincal.valorantstory.agent.Agent
@@ -17,31 +20,52 @@ import kotlinx.android.synthetic.main.activity_agent_detail.*
 
 class AgentDetailActivity : AppCompatActivity() {
 
+    private var adView: AdView? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         StatusBarManager.changeStausBarColor(this, R.color.backgroundAgent)
         var binding: ActivityAgentDetailBinding = DataBindingUtil.setContentView(this, R.layout.activity_agent_detail)
         val agent = Agent(intent.getStringExtra("identifier")!!)
         binding.agent = agent
+        adView = AgentDetailAdView
+        val interstitialAd = InterstitialAd(this)
+        AdManager.setAd(adView!!)
 
-        AgentInfoStandingImageView.layoutParams.width = ScreenSizeHolder.screenWidth / 2
-        AgentInfoStandingImageView.layoutParams.height = ScreenSizeHolder.screenHeight * 2 / 5
+        AgentDetailStandingImageView.layoutParams.width = ScreenSizeHolder.screenWidth / 2
+        AgentDetailStandingImageView.layoutParams.height = ScreenSizeHolder.screenHeight * 2 / 5
 
-        AgentInfoRoleImageView.layoutParams.height = ScreenSizeHolder.screenHeight / 10
-        AgentInfoRoleImageView.layoutParams.width = ScreenSizeHolder.screenWidth / 10
+        AgentDetailRoleImageView.layoutParams.height = ScreenSizeHolder.screenHeight / 10
+        AgentDetailRoleImageView.layoutParams.width = ScreenSizeHolder.screenWidth / 10
 
-        AgentInfoNameTextView.layoutParams.height = ScreenSizeHolder.screenHeight / 16
-        AgentInfoRoleTextView.layoutParams.height = ScreenSizeHolder.screenHeight / 26
+        AgentDetailNameTextView.layoutParams.height = ScreenSizeHolder.screenHeight / 16
+        AgentDetailRoleTextView.layoutParams.height = ScreenSizeHolder.screenHeight / 26
 
-        AgentInfoCommentTextView.layoutParams.height = ScreenSizeHolder.screenHeight / 24
-        AgentInfoBiographyTextView.movementMethod = ScrollingMovementMethod()
+        AgentDetailCommentTextView.layoutParams.height = ScreenSizeHolder.screenHeight / 24
+        AgentDetailBiographyTextView.movementMethod = ScrollingMovementMethod()
 
-        binding.AgentInfoSkillsRecyclerView.apply {
+        binding.AgentDetailSkillsRecyclerView.apply {
             adapter = AgentSkillRecyclerViewAdapter(agent.getAgentSkillArray())
             layoutManager = LinearLayoutManager(this@AgentDetailActivity)
             addItemDecoration(RecyclerViewDecoration(0, 3))
         }
     }
+
+    override fun onResume() {
+        AdManager.onResume(adView!!)
+        super.onResume()
+    }
+
+    override fun onPause() {
+        AdManager.onPause(adView!!)
+        super.onPause()
+    }
+
+    override fun onDestroy() {
+        AdManager.onDestroy(adView!!)
+        super.onDestroy()
+    }
+
 }
 @BindingAdapter("app:srcCompat")
 fun setImageResource(imageView: ImageView, resource: Int) {
