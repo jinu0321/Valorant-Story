@@ -37,12 +37,19 @@ class AgentCardRecyclerViewAdapter(private val agents: Array<Agent>, val fragmen
     }
 
     override fun onBindViewHolder(holder: AgentViewHolder, position: Int) {
+        holder.view.AgentItemImageView.setImageResource(agents[position].iconImageAddress)
         holder.view.AgentItemImageView.layoutParams.height = ScreenSizeHolder.screenHeight / 9
         holder.view.AgentItemImageView.layoutParams.width = ScreenSizeHolder.screenHeight / 9
-        holder.view.AgentItemImageView.setImageResource(agents[position].iconImageAddress)
-        holder.view.AgentItemNameTextView.text = agents[position].name
-        holder.view.AgentItemRoleImageView.setImageResource(agents[position].roleImageAddress)
-        holder.view.AgentItemRoleImageView.layoutParams.height = ScreenSizeHolder.screenHeight / 22
-        holder.view.AgentItemRoleImageView.layoutParams.width = ScreenSizeHolder.screenHeight / 22
+        if (agents[position].identifier == "questionmark") {
+            holder.view.AgentItemComingSoonTextView.visibility = View.VISIBLE
+            holder.view.AgentItemNameTextView.visibility = View.GONE
+            holder.view.AgentItemRoleImageView.visibility = View.GONE
+        } else {
+
+            holder.view.AgentItemNameTextView.text = agents[position].name
+            holder.view.AgentItemRoleImageView.setImageResource(agents[position].roleImageAddress)
+            holder.view.AgentItemRoleImageView.layoutParams.height = ScreenSizeHolder.screenHeight / 22
+            holder.view.AgentItemRoleImageView.layoutParams.width = ScreenSizeHolder.screenHeight / 22
+        }
     }
 }
