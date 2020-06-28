@@ -28,7 +28,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="6dp"
         android:autoSizeTextType="uniform"
-        android:fontFamily="@font/font_jsarirangfont"
+        android:fontFamily="sans-serif"
         android:gravity="center"
         android:lines="1"
         android:text="@string/agent_breach_name"

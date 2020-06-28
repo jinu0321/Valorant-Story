@@ -20,7 +20,7 @@ class Map(val identifier: String) {
             }
             "heaven" -> {
                 cardImageId = R.drawable.heaven_card
-                name = ResourceAccessor.res!!.getString(R.string.map_heaven)
+                name = ResourceAccessor.res!!.getString(R.string.map_haven)
             }
             "split" -> {
                 cardImageId = R.drawable.split_card
