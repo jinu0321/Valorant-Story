@@ -22,7 +22,7 @@ class MapContentsFragment: Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_contents_map, container, false)
         val interstitialAd = InterstitialAd(activity)
-        interstitialAd.adUnitId = ResourceAccessor.res!!.getString(R.string.id_ad_interstitial_test)
+        interstitialAd.adUnitId = ResourceAccessor.res!!.getString(R.string.id_ad_interstitial)
         interstitialAd.loadAd(AdRequest.Builder().build())
         val maps = arrayOf(
             Map("ascent"),

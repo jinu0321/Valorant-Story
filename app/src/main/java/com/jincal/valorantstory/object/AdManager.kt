@@ -16,9 +16,11 @@ object AdManager {
             return false
         }
     }
+
     fun setAd(adView: AdView) {
         adView.loadAd(AdRequest.Builder().build())
     }
+
     fun onPause(adView: AdView) {
         adView.pause()
     }
