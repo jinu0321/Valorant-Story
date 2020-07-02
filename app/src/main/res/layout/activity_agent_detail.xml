@@ -27,7 +27,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@{agent.standingImageAddress}"
+            app:srcCompat="@{agent.standingImageId}"
             tools:srcCompat="@drawable/breach" />
 
         <TextView
@@ -73,7 +73,7 @@
             android:layout_height="48dp"
             app:layout_constraintStart_toEndOf="@+id/AgentDetailStandingImageView"
             app:layout_constraintTop_toBottomOf="@+id/AgentDetailNameTextView"
-            app:srcCompat="@{agent.roleImageAddress}"
+            app:srcCompat="@{agent.roleImageId}"
             tools:srcCompat="@drawable/role_duelist" />
 
         <TextView

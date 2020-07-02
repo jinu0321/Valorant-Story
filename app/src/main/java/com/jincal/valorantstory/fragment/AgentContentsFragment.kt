@@ -12,7 +12,7 @@ import com.jincal.valorantstory.R
 import com.jincal.valorantstory.ResourceAccessor
 import com.jincal.valorantstory.agent.Agent
 import com.jincal.valorantstory.agent.agentcard.AgentCardRecyclerViewAdapter
-import com.jincal.valorantstory.agent.agentcard.RecyclerViewDecoration
+import com.jincal.valorantstory.RecyclerViewDecoration
 import kotlinx.android.synthetic.main.fragment_contents_agent.view.*
 
 class AgentContentsFragment(): Fragment() {

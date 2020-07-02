@@ -11,11 +11,10 @@ import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.InterstitialAd
 import com.jincal.valorantstory.R
 import com.jincal.valorantstory.ResourceAccessor
-import com.jincal.valorantstory.agent.agentcard.RecyclerViewDecoration
+import com.jincal.valorantstory.RecyclerViewDecoration
 import com.jincal.valorantstory.arsenal.Arsenal
 import com.jincal.valorantstory.arsenal.arsenalcard.ArsenalCardRecyclerViewAdapter
 import kotlinx.android.synthetic.main.fragment_contents_arsenal.view.*
-import kotlinx.android.synthetic.main.recyclerview_item_map_card.view.*
 
 class ArsenalContentsFragment: Fragment() {
     override fun onCreateView(
@@ -50,7 +49,12 @@ class ArsenalContentsFragment: Fragment() {
         with(view.ArsenalContentsFragmentRecyclerView) {
             adapter = ArsenalCardRecyclerViewAdapter(arsenals, this@ArsenalContentsFragment, interstitialAd)
             layoutManager = LinearLayoutManager(activity)
-            addItemDecoration(RecyclerViewDecoration(3, 3))
+            addItemDecoration(
+                RecyclerViewDecoration(
+                    3,
+                    3
+                )
+            )
         }
         return view
     }

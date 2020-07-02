@@ -25,9 +25,9 @@ class Agent(val identifier: String) {
     var skill4Cost = ""
     var skill4Charge = ""
     var skill4Description = ""
-    var iconImageAddress = 0
-    var standingImageAddress = 0
-    var roleImageAddress = 0
+    var iconImageId = 0
+    var standingImageId = 0
+    var roleImageId = 0
     var skill1Image = 0
     var skill2Image = 0
     var skill3Image = 0
@@ -72,9 +72,9 @@ class Agent(val identifier: String) {
                 skill4Cost = getString(R.string.agent_breach_skill4_cost)
                 skill4Charge = getString(R.string.agent_breach_skill4_charge)
                 skill4Description = getString(R.string.agent_breach_skill4_description)
-                iconImageAddress = R.drawable.breach_icon
-                standingImageAddress = R.drawable.breach
-                roleImageAddress = R.drawable.role_initiator
+                iconImageId = R.drawable.breach_icon
+                standingImageId = R.drawable.breach
+                roleImageId = R.drawable.role_initiator
                 skill1Image = R.drawable.breach_1_aftershock
                 skill2Image = R.drawable.breach_2_flashpoint
                 skill3Image = R.drawable.breach_3_faultline
@@ -103,9 +103,9 @@ class Agent(val identifier: String) {
                 skill4Cost = getString(R.string.agent_brimstone_skill4_cost)
                 skill4Charge = getString(R.string.agent_brimstone_skill4_charge)
                 skill4Description = getString(R.string.agent_brimstone_skill4_description)
-                iconImageAddress = R.drawable.brimstone_icon
-                standingImageAddress = R.drawable.brimstone
-                roleImageAddress = R.drawable.role_controller
+                iconImageId = R.drawable.brimstone_icon
+                standingImageId = R.drawable.brimstone
+                roleImageId = R.drawable.role_controller
                 skill1Image = R.drawable.brimstone_1_stimbeacon
                 skill2Image = R.drawable.brimstone_2_incendiary
                 skill3Image = R.drawable.brimstone_3_skysmoke
@@ -134,9 +134,9 @@ class Agent(val identifier: String) {
                 skill4Cost = getString(R.string.agent_cypher_skill4_cost)
                 skill4Charge = getString(R.string.agent_cypher_skill4_charge)
                 skill4Description = getString(R.string.agent_cypher_skill4_description)
-                iconImageAddress = R.drawable.cypher_icon
-                standingImageAddress = R.drawable.cypher
-                roleImageAddress = R.drawable.role_sentinel
+                iconImageId = R.drawable.cypher_icon
+                standingImageId = R.drawable.cypher
+                roleImageId = R.drawable.role_sentinel
                 skill1Image = R.drawable.cypher_1_trapwire
                 skill2Image = R.drawable.cypher_2_cybercage
                 skill3Image = R.drawable.cypher_3spycam
@@ -165,9 +165,9 @@ class Agent(val identifier: String) {
                 skill4Cost = getString(R.string.agent_jett_skill4_cost)
                 skill4Charge = getString(R.string.agent_jett_skill4_charge)
                 skill4Description = getString(R.string.agent_jett_skill4_description)
-                iconImageAddress = R.drawable.jett_icon
-                standingImageAddress = R.drawable.jett
-                roleImageAddress = R.drawable.role_duelist
+                iconImageId = R.drawable.jett_icon
+                standingImageId = R.drawable.jett
+                roleImageId = R.drawable.role_duelist
                 skill1Image = R.drawable.jett_1_cloudburst
                 skill2Image = R.drawable.jett_2_updraft
                 skill3Image = R.drawable.jett_3_tailwind
@@ -196,9 +196,9 @@ class Agent(val identifier: String) {
                 skill4Cost = getString(R.string.agent_omen_skill4_cost)
                 skill4Charge = getString(R.string.agent_omen_skill4_charge)
                 skill4Description = getString(R.string.agent_omen_skill4_description)
-                iconImageAddress = R.drawable.omen_icon
-                standingImageAddress = R.drawable.omen
-                roleImageAddress = R.drawable.role_controller
+                iconImageId = R.drawable.omen_icon
+                standingImageId = R.drawable.omen
+                roleImageId = R.drawable.role_controller
                 skill1Image = R.drawable.omen_1_shroudedstep
                 skill2Image = R.drawable.omen_2_paranoia
                 skill3Image = R.drawable.omen_3_darkcover
@@ -227,9 +227,9 @@ class Agent(val identifier: String) {
                 skill4Cost = getString(R.string.agent_phoenix_skill4_cost)
                 skill4Charge = getString(R.string.agent_phoenix_skill4_charge)
                 skill4Description = getString(R.string.agent_phoenix_skill4_description)
-                iconImageAddress = R.drawable.phoenix_icon
-                standingImageAddress = R.drawable.phoenix
-                roleImageAddress = R.drawable.role_duelist
+                iconImageId = R.drawable.phoenix_icon
+                standingImageId = R.drawable.phoenix
+                roleImageId = R.drawable.role_duelist
                 skill1Image = R.drawable.phoenix_1_blaze
                 skill2Image = R.drawable.phoenix_2_curveball
                 skill3Image = R.drawable.phoenix_3_hothands
@@ -258,9 +258,9 @@ class Agent(val identifier: String) {
                 skill4Cost = getString(R.string.agent_raze_skill4_cost)
                 skill4Charge = getString(R.string.agent_raze_skill4_charge)
                 skill4Description = getString(R.string.agent_raze_skill4_description)
-                iconImageAddress = R.drawable.raze_icon
-                standingImageAddress = R.drawable.raze
-                roleImageAddress = R.drawable.role_duelist
+                iconImageId = R.drawable.raze_icon
+                standingImageId = R.drawable.raze
+                roleImageId = R.drawable.role_duelist
                 skill1Image = R.drawable.raze_1_boombot
                 skill2Image = R.drawable.raze_2_painshells
                 skill3Image = R.drawable.raze_3_blastlpack
@@ -289,9 +289,9 @@ class Agent(val identifier: String) {
                 skill4Cost = getString(R.string.agent_reyna_skill4_cost)
                 skill4Charge = getString(R.string.agent_reyna_skill4_charge)
                 skill4Description = getString(R.string.agent_reyna_skill4_description)
-                iconImageAddress = R.drawable.reyna_icon
-                standingImageAddress = R.drawable.reyna
-                roleImageAddress = R.drawable.role_duelist
+                iconImageId = R.drawable.reyna_icon
+                standingImageId = R.drawable.reyna
+                roleImageId = R.drawable.role_duelist
                 skill1Image = R.drawable.reyna_1_dismiss
                 skill2Image = R.drawable.reyna_2_leer
                 skill3Image = R.drawable.reyna_3_devour
@@ -320,9 +320,9 @@ class Agent(val identifier: String) {
                 skill4Cost = getString(R.string.agent_sage_skill4_cost)
                 skill4Charge = getString(R.string.agent_sage_skill4_charge)
                 skill4Description = getString(R.string.agent_sage_skill4_description)
-                iconImageAddress = R.drawable.sage_icon
-                standingImageAddress = R.drawable.sage
-                roleImageAddress = R.drawable.role_sentinel
+                iconImageId = R.drawable.sage_icon
+                standingImageId = R.drawable.sage
+                roleImageId = R.drawable.role_sentinel
                 skill1Image = R.drawable.sage_1_barrierorb
                 skill2Image = R.drawable.sage_2_sloworb
                 skill3Image = R.drawable.sage_3_healingorb
@@ -351,9 +351,9 @@ class Agent(val identifier: String) {
                 skill4Cost = getString(R.string.agent_sova_skill4_cost)
                 skill4Charge = getString(R.string.agent_sova_skill4_charge)
                 skill4Description = getString(R.string.agent_sova_skill4_description)
-                iconImageAddress = R.drawable.sova_icon
-                standingImageAddress = R.drawable.sova
-                roleImageAddress = R.drawable.role_initiator
+                iconImageId = R.drawable.sova_icon
+                standingImageId = R.drawable.sova
+                roleImageId = R.drawable.role_initiator
                 skill1Image = R.drawable.sova_1_owldrone
                 skill2Image = R.drawable.sova_2_shockbolt
                 skill3Image = R.drawable.sova_3_reconbolt
@@ -382,9 +382,9 @@ class Agent(val identifier: String) {
                 skill4Cost = getString(R.string.agent_viper_skill4_cost)
                 skill4Charge = getString(R.string.agent_viper_skill4_charge)
                 skill4Description = getString(R.string.agent_viper_skill4_description)
-                iconImageAddress = R.drawable.viper_icon
-                standingImageAddress = R.drawable.viper
-                roleImageAddress = R.drawable.role_controller
+                iconImageId = R.drawable.viper_icon
+                standingImageId = R.drawable.viper
+                roleImageId = R.drawable.role_controller
                 skill1Image = R.drawable.viper_1_snakesite
                 skill2Image = R.drawable.viper_2_poisoncloud
                 skill3Image = R.drawable.viper_3_toxicscreen
@@ -392,7 +392,7 @@ class Agent(val identifier: String) {
             }
 
             "questionmark" -> {
-                iconImageAddress = R.drawable.question_mark
+                iconImageId = R.drawable.question_mark
             }
         }
     }
