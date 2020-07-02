@@ -1,5 +1,6 @@
 package com.jincal.valorantstory.agent.agentcard
 
+import android.content.Context
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -15,6 +16,7 @@ import com.jincal.valorantstory.`object`.ScreenSizeHolder
 import com.jincal.valorantstory.agent.Agent
 import kotlinx.android.synthetic.main.recyclerview_item_agent_card.view.*
 import org.jetbrains.anko.support.v4.startActivity
+import kotlin.math.ceil
 
 class AgentCardRecyclerViewAdapter(private val agents: Array<Agent>, val fragment: Fragment, val interstitialAd: InterstitialAd) :
     RecyclerView.Adapter<AgentCardRecyclerViewAdapter.AgentViewHolder>() {
@@ -57,17 +59,16 @@ class AgentCardRecyclerViewAdapter(private val agents: Array<Agent>, val fragmen
     }
 
     override fun onBindViewHolder(holder: AgentViewHolder, position: Int) {
-        holder.view.AgentItemImageView.setImageResource(agents[position].iconImageAddress)
-        holder.view.AgentItemImageView.layoutParams.height = ScreenSizeHolder.screenHeight / 9
-        holder.view.AgentItemImageView.layoutParams.width = ScreenSizeHolder.screenHeight / 9
+        holder.view.AgentItemImageView.setImageResource(agents[position].iconImageId)
+        holder.view.AgentItemImageView.layoutParams.height = (ScreenSizeHolder.screenHeight / 8) - ceil(ScreenSizeHolder.dpToPx(fragment, 3.0f)).toInt()
+        holder.view.AgentItemImageView.layoutParams.width = (ScreenSizeHolder.screenHeight / 8) - ceil(ScreenSizeHolder.dpToPx(fragment, 3.0f)).toInt()
         if (agents[position].identifier == "questionmark") {
             holder.view.AgentItemComingSoonTextView.visibility = View.VISIBLE
             holder.view.AgentItemNameTextView.visibility = View.GONE
             holder.view.AgentItemRoleImageView.visibility = View.GONE
         } else {
-
             holder.view.AgentItemNameTextView.text = agents[position].name
-            holder.view.AgentItemRoleImageView.setImageResource(agents[position].roleImageAddress)
+            holder.view.AgentItemRoleImageView.setImageResource(agents[position].roleImageId)
             holder.view.AgentItemRoleImageView.layoutParams.height = ScreenSizeHolder.screenHeight / 22
             holder.view.AgentItemRoleImageView.layoutParams.width = ScreenSizeHolder.screenHeight / 22
         }

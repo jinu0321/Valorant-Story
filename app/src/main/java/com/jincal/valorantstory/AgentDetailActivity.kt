@@ -13,10 +13,10 @@ import com.jincal.valorantstory.`object`.AdManager
 import com.jincal.valorantstory.`object`.ScreenSizeHolder
 import com.jincal.valorantstory.`object`.StatusBarManager
 import com.jincal.valorantstory.agent.Agent
-import com.jincal.valorantstory.agent.agentcard.RecyclerViewDecoration
 import com.jincal.valorantstory.agent.agentskill.AgentSkillRecyclerViewAdapter
 import com.jincal.valorantstory.databinding.ActivityAgentDetailBinding
 import kotlinx.android.synthetic.main.activity_agent_detail.*
+import org.jetbrains.anko.startActivity
 
 class AgentDetailActivity : AppCompatActivity() {
 
@@ -47,7 +47,16 @@ class AgentDetailActivity : AppCompatActivity() {
         binding.AgentDetailSkillsRecyclerView.apply {
             adapter = AgentSkillRecyclerViewAdapter(agent.getAgentSkillArray())
             layoutManager = LinearLayoutManager(this@AgentDetailActivity)
-            addItemDecoration(RecyclerViewDecoration(0, 3))
+            addItemDecoration(
+                RecyclerViewDecoration(
+                    0,
+                    3
+                )
+            )
+        }
+
+        AgentDetailStandingImageView.setOnClickListener {
+            startActivity<AgentFullImageActivity>("imageId" to agent.standingImageId)
         }
     }
 

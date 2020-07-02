@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jincal.valorantstory">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".ResourceAccessor"
@@ -12,9 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".AgentFullImageActivity"></activity>
+
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="@string/id_app"/>
+            android:value="@string/id_app" />
+
         <activity android:name=".MapDetailActivity" />
         <activity android:name=".ArsenalDetailActivity" />
         <activity android:name=".AgentDetailActivity" />

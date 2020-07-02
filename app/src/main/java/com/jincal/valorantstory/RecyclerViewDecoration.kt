@@ -1,4 +1,4 @@
-package com.jincal.valorantstory.agent.agentcard
+package com.jincal.valorantstory
 
 import android.graphics.Rect
 import android.view.View
