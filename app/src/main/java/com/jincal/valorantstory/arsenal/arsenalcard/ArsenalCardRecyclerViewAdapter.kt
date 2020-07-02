@@ -14,6 +14,7 @@ import com.jincal.valorantstory.R
 import com.jincal.valorantstory.`object`.AdManager
 import com.jincal.valorantstory.`object`.ScreenSizeHolder
 import com.jincal.valorantstory.arsenal.Arsenal
+import kotlinx.android.synthetic.main.recyclerview_item_agent_card.view.*
 import kotlinx.android.synthetic.main.recyclerview_item_arsenal_card.view.*
 import org.jetbrains.anko.support.v4.startActivity
 
@@ -60,6 +61,14 @@ class ArsenalCardRecyclerViewAdapter(val arsenals: Array<Arsenal>, val fragment:
             ItemArsenalCardImageView.setImageResource(arsenal.imageId)
             ItemArsenalCardNameTextView.text = arsenal.name
             ItemArsenalCardTypeTextView.text = arsenal.type
+            ArsenalItemEdgeImageView1.layoutParams.height = ScreenSizeHolder.screenHeight / 80
+            ArsenalItemEdgeImageView1.layoutParams.width = ScreenSizeHolder.screenHeight / 80
+            ArsenalItemEdgeImageView2.layoutParams.height = ScreenSizeHolder.screenHeight / 80
+            ArsenalItemEdgeImageView2.layoutParams.width = ScreenSizeHolder.screenHeight / 80
+            ArsenalItemEdgeImageView3.layoutParams.height = ScreenSizeHolder.screenHeight / 80
+            ArsenalItemEdgeImageView3.layoutParams.width = ScreenSizeHolder.screenHeight / 80
+            ArsenalItemEdgeImageView4.layoutParams.height = ScreenSizeHolder.screenHeight / 80
+            ArsenalItemEdgeImageView4.layoutParams.width = ScreenSizeHolder.screenHeight / 80
         }
 
     }
