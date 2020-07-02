@@ -49,8 +49,8 @@ class AgentContentsFragment(): Fragment() {
             )
         view.AgentContentsFragmentRecyclerView.addItemDecoration(
             RecyclerViewDecoration(
-                3,
-                3
+                6,
+                6
             )
         )
         return view

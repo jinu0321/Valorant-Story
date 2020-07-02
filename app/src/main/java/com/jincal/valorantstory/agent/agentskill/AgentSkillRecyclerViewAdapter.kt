@@ -1,5 +1,6 @@
 package com.jincal.valorantstory.agent.agentskill
 
+import android.graphics.Typeface
 import android.os.Build
 import android.view.LayoutInflater
 import android.view.View
@@ -36,7 +37,7 @@ class AgentSkillRecyclerViewAdapter(private val agentSkillArray: Array<Agent.Age
             }
             if (agentSkill == agentSkillArray[3]) {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                    ItemAgentSkillName.typeface = resources.getFont(R.font.font_jsarirangfont)
+                    ItemAgentSkillName.typeface = Typeface.DEFAULT_BOLD
                 }
                 ItemAgentSkillCredTextView.text = ResourceAccessor.res!!.getString(R.string.point)
             }

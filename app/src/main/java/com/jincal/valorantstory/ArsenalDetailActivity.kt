@@ -10,6 +10,7 @@ import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.InterstitialAd
 import com.jincal.valorantstory.`object`.AdManager
 import com.jincal.valorantstory.`object`.StatusBarManager
+import com.jincal.valorantstory.agent.Agent
 import com.jincal.valorantstory.arsenal.Arsenal
 import kotlinx.android.synthetic.main.activity_arsenal_detail.*
 
@@ -67,6 +68,7 @@ class ArsenalDetailActivity : AppCompatActivity() {
                 textView.text = damage
             }
         }
+        ArsenalDetailManikinImageView.setImageResource(Agent("").getRandomAgentImageId())
         ArsenalDetailDistance2Layout.visibility = View.VISIBLE
         ArsenalDetailDistance3Layout.visibility = View.VISIBLE
         ArsenalDetailDistance1DistanceTextView.text = arsenal.distance1

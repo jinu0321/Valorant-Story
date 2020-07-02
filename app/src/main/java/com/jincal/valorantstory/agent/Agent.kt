@@ -2,6 +2,7 @@ package com.jincal.valorantstory.agent
 
 import com.jincal.valorantstory.R
 import com.jincal.valorantstory.ResourceAccessor
+import java.util.*
 
 class Agent(val identifier: String) {
     var name = ""
@@ -45,6 +46,22 @@ class Agent(val identifier: String) {
         AgentSkill(skill2Name, skill2Cost, skill2Charge, skill2Description, skill2Image, "Q"),
         AgentSkill(skill3Name, skill3Cost, skill3Charge, skill3Description, skill3Image, "E"),
         AgentSkill(skill4Name, skill4Cost, skill4Charge, skill4Description, skill4Image, "X"))
+
+    fun getRandomAgentImageId(): Int {
+        return when (Random().nextInt(11)) {
+            0 -> R.drawable.breach
+            1 -> R.drawable.brimstone
+            2 -> R.drawable.cypher
+            3 -> R.drawable.jett
+            4 -> R.drawable.omen
+            5 -> R.drawable.phoenix
+            6 -> R.drawable.raze
+            7 -> R.drawable.reyna
+            8 -> R.drawable.sage
+            9 -> R.drawable.sova
+            else -> R.drawable.viper
+        }
+    }
 
     // below init...... completely bad(aspect of time wasting).. look at the Arsenal class' init!
     init {

@@ -5,9 +5,9 @@
     <color name="colorAccent">#000000</color>
     <color name="colorGreen">#43A047</color>
     <color name="colorBlack">#000000</color>
-    <color name="backgroundAgent">#00897B</color>
-    <color name="backgroundArsenal">#7C46EA</color>
-    <color name="backgroundMap">#F19E36</color>
+    <color name="backgroundAgent">#101138</color>
+    <color name="backgroundArsenal">#101138</color>
+    <color name="backgroundMap">#101138</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorGray">#979797</color>
 </resources>
