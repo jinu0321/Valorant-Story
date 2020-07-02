@@ -7,9 +7,21 @@
     android:background="@drawable/background_item_agent">
 
     <ImageView
-        android:id="@+id/AgentItemImageView"
-        android:layout_width="60dp"
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
         android:layout_height="0dp"
+        android:alpha="0.2"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cardbackground" />
+
+    <ImageView
+        android:id="@+id/AgentItemImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -21,37 +33,40 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="6dp"
+        android:layout_marginBottom="8dp"
         android:autoSizeTextType="uniform"
         android:fontFamily="sans-serif"
-        android:gravity="center"
+        android:gravity="bottom|center_horizontal"
         android:lines="1"
         android:text="@string/agent_breach_name"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/AgentItemRoleImageView"
+        app:autoSizeMaxTextSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/AgentItemImageView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/AgentItemRoleImageView" />
 
     <ImageView
         android:id="@+id/AgentItemRoleImageView"
         android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/AgentItemImageView"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/AgentItemImageView"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/role_initiator" />
 
     <TextView
         android:id="@+id/AgentItemComingSoonTextView"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="12dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/font_jsarirangfont"
         android:gravity="center"
         android:lines="2"
@@ -62,5 +77,42 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/AgentItemImageView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/AgentItemRoleImageView" />
+
+    <ImageView
+        android:id="@+id/AgentItemEdgeImageView2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:alpha="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cardedgemark" />
+
+    <ImageView
+        android:id="@+id/AgentItemEdgeImageView1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:alpha="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cardedgemark" />
+
+    <ImageView
+        android:id="@+id/AgentItemEdgeImageView4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cardedgemark" />
+
+    <ImageView
+        android:id="@+id/AgentItemEdgeImageView3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cardedgemark" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

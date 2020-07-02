@@ -60,8 +60,16 @@ class AgentCardRecyclerViewAdapter(private val agents: Array<Agent>, val fragmen
 
     override fun onBindViewHolder(holder: AgentViewHolder, position: Int) {
         holder.view.AgentItemImageView.setImageResource(agents[position].iconImageId)
-        holder.view.AgentItemImageView.layoutParams.height = (ScreenSizeHolder.screenHeight / 8) - ceil(ScreenSizeHolder.dpToPx(fragment, 3.0f)).toInt()
-        holder.view.AgentItemImageView.layoutParams.width = (ScreenSizeHolder.screenHeight / 8) - ceil(ScreenSizeHolder.dpToPx(fragment, 3.0f)).toInt()
+        holder.view.AgentItemImageView.layoutParams.height = (ScreenSizeHolder.screenHeight / 8) - ceil(ScreenSizeHolder.pxToDp(fragment, 6.0f)).toInt()
+        holder.view.AgentItemImageView.layoutParams.width = (ScreenSizeHolder.screenHeight / 8) - ceil(ScreenSizeHolder.pxToDp(fragment, 6.0f)).toInt()
+        holder.view.AgentItemEdgeImageView1.layoutParams.height = ScreenSizeHolder.screenHeight / 80
+        holder.view.AgentItemEdgeImageView1.layoutParams.width = ScreenSizeHolder.screenHeight / 80
+        holder.view.AgentItemEdgeImageView2.layoutParams.height = ScreenSizeHolder.screenHeight / 80
+        holder.view.AgentItemEdgeImageView2.layoutParams.width = ScreenSizeHolder.screenHeight / 80
+        holder.view.AgentItemEdgeImageView3.layoutParams.height = ScreenSizeHolder.screenHeight / 80
+        holder.view.AgentItemEdgeImageView3.layoutParams.width = ScreenSizeHolder.screenHeight / 80
+        holder.view.AgentItemEdgeImageView4.layoutParams.height = ScreenSizeHolder.screenHeight / 80
+        holder.view.AgentItemEdgeImageView4.layoutParams.width = ScreenSizeHolder.screenHeight / 80
         if (agents[position].identifier == "questionmark") {
             holder.view.AgentItemComingSoonTextView.visibility = View.VISIBLE
             holder.view.AgentItemNameTextView.visibility = View.GONE
@@ -69,8 +77,8 @@ class AgentCardRecyclerViewAdapter(private val agents: Array<Agent>, val fragmen
         } else {
             holder.view.AgentItemNameTextView.text = agents[position].name
             holder.view.AgentItemRoleImageView.setImageResource(agents[position].roleImageId)
-            holder.view.AgentItemRoleImageView.layoutParams.height = ScreenSizeHolder.screenHeight / 22
-            holder.view.AgentItemRoleImageView.layoutParams.width = ScreenSizeHolder.screenHeight / 22
+            holder.view.AgentItemRoleImageView.layoutParams.height = ScreenSizeHolder.screenHeight / 20
+            holder.view.AgentItemRoleImageView.layoutParams.width = ScreenSizeHolder.screenHeight / 20
         }
     }
 }

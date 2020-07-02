@@ -51,16 +51,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:fontFamily="@font/font_jsarirangfont"
+                android:fontFamily="sans-serif-condensed-light"
                 android:gravity="center"
                 android:lines="1"
-                android:paddingLeft="40dp"
-                android:paddingRight="40dp"
                 android:paddingBottom="10dp"
                 android:text="@string/arsenal_tacticalknife_type"
                 android:textAllCaps="true"
                 android:textColor="#FFFFFF"
-                android:textSize="26sp" />
+                android:textSize="26sp"
+                app:autoSizeMaxTextSize="24sp"
+                app:autoSizeTextType="uniform" />
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

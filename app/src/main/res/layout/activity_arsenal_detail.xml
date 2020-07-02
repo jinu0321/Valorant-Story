@@ -82,10 +82,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/font_jsarirangfont"
+                    android:fontFamily="sans-serif"
                     android:gravity="start|center_vertical"
                     android:text="@string/arsenal_classic_type"
                     android:textColor="#FFFFFF"
+                    ads:autoSizeMaxTextSize="17sp"
                     app:autoSizeTextType="uniform" />
 
                 <TextView
@@ -104,10 +105,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/font_jsarirangfont"
+                    android:fontFamily="sans-serif"
                     android:gravity="start|center_vertical"
                     android:text="@string/arsenal_tacticalknife_cost"
                     android:textColor="#FFFFFF"
+                    ads:autoSizeMaxTextSize="17sp"
                     app:autoSizeTextType="uniform" />
 
             </LinearLayout>
@@ -134,10 +136,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/font_jsarirangfont"
+                    android:fontFamily="sans-serif"
                     android:gravity="start|center_vertical"
                     android:text="12 / 36"
                     android:textColor="#FFFFFF"
+                    ads:autoSizeMaxTextSize="17sp"
                     app:autoSizeTextType="uniform" />
 
                 <TextView
@@ -156,10 +159,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/font_jsarirangfont"
+                    android:fontFamily="sans-serif"
                     android:gravity="start|center_vertical"
                     android:text="@string/arsenal_classic_wall_penetration"
                     android:textColor="#FFFFFF"
+                    ads:autoSizeMaxTextSize="17sp"
                     app:autoSizeTextType="uniform" />
 
             </LinearLayout>
