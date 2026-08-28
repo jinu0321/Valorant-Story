@@ -106,13 +106,6 @@ app/src/main/
 
 프로젝트가 사용하는 Gradle/Android 플러그인 및 일부 라이브러리는 현재 기준으로 오래된 버전입니다. 최신 JDK나 Android Studio에서 동기화 문제가 발생한다면 프로젝트 당시 환경에 맞는 JDK 8과 Android SDK 29 조합을 먼저 확인해야 합니다. Firebase 및 광고 연동을 변경해 사용하는 경우에는 자신의 프로젝트 설정과 광고 단위 ID로 교체해야 합니다.
 
-## 현재 범위와 개선 과제
-
-- 기본 템플릿 수준의 단위 테스트와 계측 테스트만 있어, 모델 매핑과 화면 이동에 대한 자동화 테스트 보강이 필요합니다.
-- 콘텐츠가 앱에 정적으로 포함되므로 최신 데이터 동기화나 버전 표기가 없습니다.
-- `ResourceAccessor`와 `ScreenSizeHolder`가 전역 상태를 사용하고, Activity/Fragment가 데이터 생성과 화면 구성을 함께 담당합니다. ViewModel·Repository 계층을 도입하면 생명주기 대응과 테스트 용이성을 높일 수 있습니다.
-- Kotlin Android Extensions, Anko, JCenter 기반 의존성 등 현재는 사용 중단되거나 권장되지 않는 기술을 View Binding, AndroidX Navigation, Maven Central 기반 구성으로 마이그레이션할 수 있습니다.
-
 ## 비공식 프로젝트 안내
 
 Valorant Story는 **비공식 팬 프로젝트**이며 Riot Games의 공식 앱이나 제휴 제품이 아닙니다. VALORANT, Riot Games 및 관련 이름·이미지·상표의 권리는 각 권리자에게 있습니다. 저장소의 소프트웨어 코드는 [Apache License 2.0](LICENSE)을 따르며, 이 라이선스가 제3자 게임 자산에 대한 권리를 부여하는 것은 아닙니다.
